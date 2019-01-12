@@ -64,13 +64,58 @@ nav {
 	margin: 18px 0px 0 45px;
 }
 
-#nav-large a {
-	margin-right: 55px;
+#nav-large ul {
+	list-style: none;
+	text-align: center;
+}
+
+#nav-large ul li {
+	display: inline-block;
+}
+
+#nav-large ul li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #aaa;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+#nav-large ul li a,
+#nav-large a:after,
+#nav-large a:before {
+  transition: all .5s;
+}
+
+.stroke ul li a {
+	position: relative;
+}
+
+.stroke ul li a:after {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#nav-large ul li a:hover {
+  color: #555;
 }
 
 nav a {
 	text-decoration: none;
-	color: white;
+	color: #aaa;
 	font-size: 20px;
 }
 
@@ -93,7 +138,7 @@ nav a {
 
 #menu-horizontal {
 	max-width: 1100px;
-	height: 55px;
+	height: 85px;
 	margin: auto;
 }
 
@@ -165,10 +210,15 @@ nav a {
 	padding: 20px;
 }
 
-projects {
+/* projects {
 	padding-top: 30px;
 	padding-bottom: 60px;
+} */
+
+.projects-container h3 {
+	text-align: center;
 }
+
 .projects-container {
 	display: flex;
 	flex-direction: row wrap;
@@ -182,13 +232,26 @@ projects {
 	padding-bottom: 15px;
 }
 
-.projects-item {
+/* .projects-thumbnail {
+	max-width: 300px;
+	max-height: 150px;
+} */
+
+.projects-thumbnail img {
 	margin: auto;
-	width: 300px;
 	text-align: center;
 }
 
 /* ABOUT */
+
+#about section {
+	margin-top: 110px;
+}
+
+#tech-section {
+	padding-bottom: 75px;
+}
+
 #selfie,
 #about h3 {
 	text-align: center;
@@ -215,28 +278,29 @@ projects {
 
 .job-container {
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: stretch;
 	justify-content: space-between;
-	padding-bottom: 25px;
+	padding-bottom: 75px;
+	margin: auto;
 }
 
 .job-title {
 	margin: auto;
+	width: 75%
 }
 
 .job-title h4 {
-	padding: 15px 0;
 	margin: 0;
 }
 
 .job-detail {
 	margin: auto;
-	width: 500px;
+	width: 100%;
 }
 .job-detail ul {
 	list-style-type: none;
-	max-width: 500px;
+	max-width: 700px;
 }
 
 .job-detail li {
@@ -244,9 +308,9 @@ projects {
 }
 
 .job-icon {
-	max-width: 125px;
-	max-height: 125px;
-	margin: auto;
+	max-width: 100px;
+	max-height: 100px;
+	margin: auto 5px;
 }
 
 .edu-container {
@@ -256,11 +320,17 @@ projects {
 	align-items: center;
 	margin-top: 10px;
 	margin-bottom: 80px;
+	margin: 0 10px;
+}
+
+.edu-detail {
+	margin: 0 10px;
 }
 
 .edu-icon {
 	max-width: 150px;
 	max-height: 150px;
+	margin: 0 10px;
 }
 
 
@@ -274,13 +344,13 @@ projects {
 
 .tech-icon {
 	max-width: 150px;
-	margin: 10px;
+	margin: 35px;
 }
+
 /* FOOTER */
 
 .item {
 	width: 100px;
-	height: 150px;
 	padding-top: 15px;
 }
 
@@ -304,23 +374,26 @@ footer {
 	padding-bottom: 20px;
 	position: absolute;
 	width: 100%;
-	height: 25%;
 }
 
 
 
- footer .container {
+footer .container {
 	max-width: 1200px;
 	margin: auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
- }
+}
 
 
 /* -------- MEDIA QUERIES --------------- */
 
-
+@media(max-width: 650px) {
+	.tech-icon {
+		max-width:  100px;
+	}
+}
 @media(max-width: 950px) {
 
 	/* section titles */
@@ -331,9 +404,12 @@ footer {
 	.skills-container,
 	.projects-container,
 	.job-container,
-	.edu-container,
-	footer .container {
+	.edu-container {
 		display: block;
+	}
+
+	.job-detail {
+		width: 100%
 	}
 
 	.skills-item {
@@ -354,6 +430,13 @@ footer {
 /* LARGE SCREEN */
 @media(max-width: 1140px) {
 	#nav-large {
+		display: none;
+	}
+}
+
+@media(min-width: 1140px ){
+	.menu-list,
+	.menu-icon-wrapper {
 		display: none;
 	}
 }

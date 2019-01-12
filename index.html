@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/component.css" />
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	 crossorigin="anonymous"></script>
 	<script src="js/segment.min.js"></script>
 	<script src="js/ease.min.js"></script>
 </head>
@@ -19,43 +20,49 @@
 	<!-- NAVIGATION -->
 	<nav role="navigation">
 		<div id="menu-container">
-		<div id="menu-horizontal">
-			<div id="menu-name-wrapper">
-				<p>Kevin Crawford</p>
-			</div>
-			
-			<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-				<svg width="1000px" height="1000px">
-					<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-					<path id="pathB" d="M 300 500 L 700 500"></path>
-					<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-				</svg>
-				<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-			</div>
-			<div id="nav-large">	
-				<a href="#landing-overview">Home</a>
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
-			</div>	
+			<div id="menu-horizontal">
+
+				<div id="menu-name-wrapper">
+					<p>Kevin Crawford</p>
+				</div>
+
+				<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+					<svg width="1000px" height="1000px">
+						<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathB" d="M 300 500 L 700 500"></path>
+						<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+					<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+				</div>
+
+				<div id="nav-large" class="stroke">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+				</div>
+
 			</div>
 		</div>
-		<!-- NAVIGATION LIST ITEMS -->
-			<div id="menu-list" class="menu-list">
-				<div class="list__item">
-					<a href="#landing-overview" class="home-link">Home</a>
-				</div>
-				<div class="list__item">
-					<a href="#about" class="about-link">About</a>
-				</div>
-				<div class="list__item" class="projects-link">
-					<a href="#">Projects</a>
-				</div>
-				<div class="list__item" class="contact-link">
-					<a href="#">Contact</a>
-				</div>
+
+		<!-- NAVIGATION LIST ITEMS MOBILE -->
+		<div id="menu-list" class="menu-list">
+			<div class="list__item">
+				<a href="#" class="home-link">Home</a>
 			</div>
-		
+			<div class="list__item">
+				<a href="#" class="about-link">About</a>
+			</div>
+			<div class="list__item" class="projects-link">
+				<a href="#">Projects</a>
+			</div>
+			<div class="list__item" class="contact-link">
+				<a href="#">Contact</a>
+			</div>
+		</div>
+
 	</nav>
 
 	<section id="splash-banner">
@@ -68,114 +75,64 @@
 
 	<main role="main">
 		<div id="content-wrapper">
-		<div id="landing-overview">
-			<section class="skills section">
-				<h2>Skills</h2>
-				<div class="skills-container">
-					<div class="skills-item">
-						<img src="img/comm-bubble.svg" alt="communication logo">
-						<h3>Communication</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-							sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+			<div id="landing-overview">
+				<section class="skills section">
+					<h2>Skills</h2>
+					<div class="skills-container">
+						<div class="skills-item">
+							<img src="img/comm-bubble.svg" alt="communication logo">
+							<h3>Communication</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
+								Nulla viverra
+								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+						</div>
+						<div class="skills-item">
+							<img src="img/brain-icon.svg" alt="critical thinking logo">
+							<h3>Critical Thinking</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
+								Nulla viverra
+								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+						</div>
+						<div class="skills-item">
+							<img src="img/priority-calander.svg" alt="prioritize logo">
+							<h3>Prioritization</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
+								Nulla viverra
+								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+						</div>
 					</div>
-					<div class="skills-item">
-						<img src="img/brain-icon.svg" alt="critical thinking logo">
-						<h3>Critical Thinking</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-							sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
-					</div>
-					<div class="skills-item">
-						<img src="img/priority-calander.svg" alt="prioritize logo">
-						<h3>Prioritization</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-							sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
-					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="projects section">
-				<h2>Projects</h2>
-				<div class="projects-container">
-					<div class="projects-item">
-						<h3>Automate</h3>
-						<img alt="sneaker locker banner">
+				<section class="projects section">
+					<h2>Projects</h2>
+					<div class="projects-container">
+						<div class="projects-thumbnail">
+							<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
+						</div>
+						<div class="projects-thumbnail">
+							<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
+						</div>
+						<div class="projects-thumbnail">
+							<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
+						</div>
 					</div>
-					<div class="projects-item">
-						<h3>TuneIn</h3>
-						<img alt="sneaker locker banner">
-					</div>
-					<div class="projects-item">
-						<h3>SneakerLocker</h3>
-						<img alt="sneaker locker banner">
-					</div>
-				</div>
-			</section>
-		</div>
-
-
-		<!--          ABOUT ME PAGE VIEW           -->
-		<div id="about" class="nothidden">
-			
-			<div id="selfie">
-				<img src="img/kevinmocktrimpic.png" alt="img of me">
-			</div>
-			<div id="about-title">
-				<h3>Kevin Douglas Crawford</h2>
-					<h3>Full Stack Engineer</h6>
+				</section>
 			</div>
 
-			<section id="work-section">
-				<h3>Work History</h3>
-				<div class="job-container">
-						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
-					<div class="job-title">
-						<h4>Upland Unified School District</h4>
-						<h4>Substitute Teacher</h4>
-						<h4>xx/xx/xx</h4>
-					</div>
-					<div class="job-detail">
-						<ul>
-							<li>
-								Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages students
-								to participate
-							</li>
-							<li>
-								Assign classwork and homework as necessary, according to lesson plans
-							</li>
-							<li>
-								Modify teaching styles to fit the learning styles of various students
-							</li>
-							<li>
-								Maintain a well-managed classroom and positive learning environment
-							</li>
-						</ul>
-					</div>
+
+			<!--          ABOUT ME PAGE VIEW           -->
+			<div id="about" class="hidden">
+
+				<div id="selfie">
+					<img src="img/kevinmocktrimpic.png" alt="img of me">
+				</div>
+				<div id="about-title">
+					<h3>Kevin Douglas Crawford</h2>
+						<h3>Full Stack Engineer</h6>
 				</div>
 
-				<div class="job-container">
-					<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
-					<div class="job-title">
-						<h4>Upland Unified School District</h4>
-						<h4>Substitute Teacher</h4>
-						<h4>xx/xx/xx</h4>
-					</div>
-					<div class="job-detail">
-						<ul>
-							<li>
-								Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning
-							</li>
-							<li>
-								Assign classwork and homework as necessary, according to lesson plans
-							</li>
-							<li>
-								Modify teaching styles to fit the learning styles of various students
-							</li>
-							<li>
-								Maintain a well-managed classroom and positive learning environment
-							</li>
-						</ul>
-					</div>
-				</div>
+				<section id="work-section">
+					<h3>Work History</h3>
 					<div class="job-container">
 						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
 						<div class="job-title">
@@ -185,7 +142,10 @@
 						</div>
 						<div class="job-detail">
 							<ul>
-								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages students to participate
+								<li>
+									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that
+									encourages students
+									to participate
 								</li>
 								<li>
 									Assign classwork and homework as necessary, according to lesson plans
@@ -193,8 +153,48 @@
 								<li>
 									Modify teaching styles to fit the learning styles of various students
 								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="job-container">
+						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
+						<div class="job-title">
+							<h4>Upland Unified School District</h4>
+							<h4>Substitute Teacher</h4>
+							<h4>xx/xx/xx</h4>
+						</div>
+						<div class="job-detail">
+							<ul>
+								<li>
+									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning
+								</li>
+								<li>
+									Assign classwork and homework as necessary, according to lesson plans
+								</li>
 								<li>
 									Maintain a well-managed classroom and positive learning environment
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="job-container">
+						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
+						<div class="job-title">
+							<h4>Upland Unified School District</h4>
+							<h4>Substitute Teacher</h4>
+							<h4>xx/xx/xx</h4>
+						</div>
+						<div class="job-detail">
+							<ul>
+								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that
+									encourages students to participate
+								</li>
+								<li>
+									Assign classwork and homework as necessary, according to lesson plans
+								</li>
+								<li>
+									Modify teaching styles to fit the learning styles of various students
 								</li>
 							</ul>
 						</div>
@@ -204,92 +204,183 @@
 				<section id="edu-section">
 					<h3>Education</h3>
 					<div class="edu-container">
-					<div class="edu-detail">
-						<ul>
-							<li>California State University San Bernardino</li>
-							<li>Bachelors of Science / Health Science</li>
-							<li>Graduated: 2015</li>
-						</ul>
-					</div>
+						<div class="edu-detail">
+							<ul>
+								<li>California State University San Bernardino</li>
+								<li>Bachelors of Science / Health Science</li>
+								<li>Graduated: 2015</li>
+							</ul>
+						</div>
 						<img class="edu-icon" src="img/csusb-logo.png" alt="CSUSB logo">
 					</div>
 					<div class="edu-container">
-							<div class="edu-detail">
-								<ul>
-									<li>ThinkFul Student</li>
-									<li>Full Stack Flex Engineering Program</li>
-									<li>Graduated: 2018</li>
-								</ul>
-							</div>
-							<img class="edu-icon" src="img/thinkful-logo.png" alt="thinkful logo">
+						<div class="edu-detail">
+							<ul>
+								<li>ThinkFul Student</li>
+								<li>Full Stack Flex Engineering Program</li>
+								<li>Graduated: 2018</li>
+							</ul>
 						</div>
-					</section>
+						<img class="edu-icon" src="img/thinkful-logo.png" alt="thinkful logo">
+					</div>
+				</section>
 
-					<section id="tech-section">
-						<h3>Technologies</h3>
-						<div class="tech-container">
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/babel-logo.svg" alt="babel logo">
+				<section id="tech-section">
+					<h3>Technologies</h3>
+					<div class="tech-container">
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/babel-logo.svg" alt="babel logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/css3-logo.svg" alt="css logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/express-logo.svg" alt="express logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/github-logo.png" alt="github logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/jest-logo.svg" alt="jest logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/npm-logo.svg" alt="npm logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/nodejs-logo.png" alt="node js logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/react-logo.svg" alt="react logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/redux-logo.svg" alt="redux logo">
+						</div>
+						<div class="tech-detail">
+							<img class="tech-icon" src="img/tech-icons/webpack-logo.svg" alt="webpack logo">
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+			<!-- PROJECTS PAGE VIEW -->
+			<div id="projects" class="hidden">
+				<h3>Recent Work</h3>
+
+				<section id="projects-section">
+
+					<div class="project-container">
+						<div class="project-thumbnail">
+							<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
+						</div>
+						<div class="project-detail">
+								<div class="project-header">
+										<h2>Year</h2>
+										<h4>2018</h4>
+										<h4>URL</h4>
+										<a href="#">Link</a>
 							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/css3-logo.svg" alt="css logo">
+							<div class="project-tech">
+								<h4>Web Stack</h4>
+								<div class="project-buttons">
+									<button class="project-tech-btn">
+										<span>Front End Logo</span>
+										<span>FRONTEND</span>
+									</button>
+									<button class="project-tech-btn">
+										<span>Back End Logo</span>
+										<span>BACKEND</span>
+									</button>
+									<button class="project-tech-btn">
+										<span>DEVOPS LOGO</span>
+										<span>DEVOPS</span>
+									</button>
+								</div>
+						</div>
+					</div>
+					</div>
+
+				<section id="projects-section">
+
+						<div class="project-container">
+							<div class="project-thumbnail">
+									<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
 							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/express-logo.svg" alt="express logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/github-logo.png" alt="github logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/jest-logo.svg" alt="jest logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/npm-logo.svg" alt="npm logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/nodejs-logo.png" alt="node js logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/react-logo.svg" alt="react logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/redux-logo.svg" alt="redux logo">
-							</div>
-							<div class="tech-detail">
-								<img class="tech-icon" src="img/tech-icons/webpack-logo.svg" alt="webpack logo">
+							<div class="project-detail">
+								<div class="project-header">
+									<h2>Year</h2>
+									<h4>2018</h4>
+									<h4>URL</h4>
+									<a href="#">Link</a>
+								</div>
+								<div class="project-tech">
+									<h4>Web Stack</h4>
+									<div class="project-buttons">
+										<button class="project-tech-btn">
+											<span>Front End Logo</span>
+											<span>FRONTEND</span>
+										</button>
+										<button class="project-tech-btn">
+											<span>Back End Logo</span>
+											<span>BACKEND</span>
+										</button>
+										<button class="project-tech-btn">
+											<span>DEVOPS LOGO</span>
+											<span>DEVOPS</span>
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
-					</section>
 
-				</div>
+				</section>
+				<section id="projects-section">
+						<div class="project-container">
+							<div class="project-thumbnail">
+								<img src="img/project-logos/sneakerlockerlogo.png" alt="project thumbnail">
+							</div>
+							<div class="project-detail">
+								<div class="project-header">
+									<h2>Year</h2>
+									<h4>2018</h4>
+									<h4>URL</h4>
+									<a href="#">Link</a>
+								</div>
+								<div class="project-tech">
+									<h4>Web Stack</h4>
+									<div class="project-buttons">
+										<button class="project-tech-btn">
+											<span>Front End Logo</span>
+											<span>FRONTEND</span>
+										</button>
+										<button class="project-tech-btn">
+											<span>Back End Logo</span>
+											<span>BACKEND</span>
+										</button>
+										<button class="project-tech-btn">
+											<span>DEVOPS LOGO</span>
+											<span>DEVOPS</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
-		<!-- PROJECTS PAGE VIEW -->
-		<div id="projects" class="hidden">
-			<section id="projects-section">
-				<div class="projects-container">
-				</div>
-			</section>
-			<section id="projects-section">
-				<div class="projects-container">
-				</div>
-			</section>
-			<section id="projects-section">
-				<div class="projects-container">
-				</div>
-			</section>
-		</div>
+				</section>
+				
+			</div>
 
 		</div>
 
@@ -303,7 +394,7 @@
 			</section>
 		</div>
 
-	</div>
+		</div>
 	</main>
 
 	<!-- FOOTER -->
