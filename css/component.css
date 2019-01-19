@@ -18,8 +18,8 @@
 
 .menu-icon-wrapper svg {
 	position: absolute;
-	top: -30px;
-	left: 5px;
+	top: -10px;
+	left: 10px;
 	-webkit-transform: scale(0.1);
 	-ms-transform: scale(0.1);
 	transform: scale(0.1);
@@ -40,8 +40,8 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	right: -38px;
-	top: 3px;
+	right: -43px;
+	top: 21px;
 	cursor: pointer;
 	pointer-events: auto;
 	background: none;

@@ -96,7 +96,7 @@
 			outB(segmentB);
 			outAC(segmentC);
 
-			menu.className = 'menu-list';
+			menu.className = 'menu-list hidden';
 		}
 		toCloseIcon = !toCloseIcon;
 	};

@@ -6,11 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Kevin Crawford</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/component.css" />
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	 crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="js/segment.min.js"></script>
 	<script src="js/ease.min.js"></script>
 </head>
@@ -36,30 +37,38 @@
 				</div>
 
 				<div id="nav-large" class="stroke">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
+					<ul>
+						<li class="home-link">
+							<a href="#">Home</a>
+						</li>
+						<li class="about-link">
+							<a href="#">About</a>
+						</li>
+						<li class="projects-link">
+							<a href="#">Projects</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
 				</div>
 
 			</div>
 		</div>
 
 		<!-- NAVIGATION LIST ITEMS MOBILE -->
-		<div id="menu-list" class="menu-list">
+		<div id="menu-list" class="menu-list hidden">
 			<div class="list__item">
 				<a href="#" class="home-link">Home</a>
 			</div>
 			<div class="list__item">
 				<a href="#" class="about-link">About</a>
 			</div>
-			<div class="list__item" class="projects-link">
-				<a href="#">Projects</a>
+			<div class="list__item">
+				<a href="#" class="projects-link">Projects</a>
 			</div>
-			<div class="list__item" class="contact-link">
-				<a href="#">Contact</a>
+			<div class="list__item">
+				<a href="#" class="contact-link">Contact</a>
 			</div>
 		</div>
 
@@ -68,8 +77,8 @@
 	<section id="splash-banner">
 		<div class="splash-container">
 			<h1>Looking For A Full Stack Web Developer?</h1>
-			<p>I am a web developer living in Southern California looking to leave his mark.</p>
-			<button href="#"> Send Me A Message</button>
+			<p>I am a web developer living in Southern California hungry to leave his mark.</p>
+			<button class="contact-me button" href="#"> Contact </button>
 		</div>
 	</section>
 
@@ -82,22 +91,19 @@
 						<div class="skills-item">
 							<img src="img/comm-bubble.svg" alt="communication logo">
 							<h3>Communication</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
-								Nulla viverra
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
 								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
 						</div>
 						<div class="skills-item">
 							<img src="img/brain-icon.svg" alt="critical thinking logo">
 							<h3>Critical Thinking</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
-								Nulla viverra
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
 								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
 						</div>
 						<div class="skills-item">
 							<img src="img/priority-calander.svg" alt="prioritize logo">
 							<h3>Prioritization</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit.
-								Nulla viverra
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
 								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
 						</div>
 					</div>
@@ -107,13 +113,20 @@
 					<h2>Projects</h2>
 					<div class="projects-container">
 						<div class="projects-thumbnail">
-							<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
+
+							<a href="index.html#automate-detail">
+								<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
+							</a>
 						</div>
 						<div class="projects-thumbnail">
-							<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
+							<a href="index.html#tunein-detail">
+								<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
+							</a>
 						</div>
 						<div class="projects-thumbnail">
-							<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
+							<a href="index.html#sneakerlocker-detail">
+								<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
+							</a>
 						</div>
 					</div>
 				</section>
@@ -143,8 +156,7 @@
 						<div class="job-detail">
 							<ul>
 								<li>
-									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that
-									encourages students
+									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages students
 									to participate
 								</li>
 								<li>
@@ -187,8 +199,8 @@
 						</div>
 						<div class="job-detail">
 							<ul>
-								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that
-									encourages students to participate
+								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages
+									students to participate
 								</li>
 								<li>
 									Assign classwork and homework as necessary, according to lesson plans
@@ -277,124 +289,247 @@
 
 			<!-- PROJECTS PAGE VIEW -->
 			<div id="projects" class="hidden">
-				<h3>Recent Work</h3>
+				<section id="projects-section">
+						<h1> Recent Work </h1>
+						<p>Click an icon to view more information</p>
+					<div class="project-container">
+						<div class="project-direction">
+						</div>
+						<div class="project-detail" id="automate-detail">
+							<div class="col-2">
+								<div class="project-thumbnail" id="automate-thumbnail">
+									<button>
+										<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
+									</button>
+								</div>
+
+								<div class="project-tech hidden" id="automate-tech">
+									<h4>Web Stack</h4>
+								
+								<div class="project-buttons">
+									<button class="project-tech-btn" id="automate-fe-btn">
+										<img src="img/painter-palette.svg" alt="frontend logo">
+										<span>FRONTEND</span>
+									</button>
+									<button class="project-tech-btn" id="automate-be-btn">
+										<img src="img/backend-icon.svg" alt="backend logo">
+										<span>BACKEND</span>
+									</button>
+									<button class="project-tech-btn" id="automate-do-btn">
+										<img src="img/devops-icon.svg" alt="automate-devops">
+										<span>DEVOPS</span>
+									</button>
+								</div>
+
+								<div class="project-tech-icons">
+									<div class="project-frontend-icons" id="automate-fe-icons">
+										<img src="img/tech-icons/react-logo.svg" alt="react logo">
+										<img src="img/tech-icons/redux-logo.svg" alt="redux logo">
+										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
+									</div>
+									<div class="project-backend-icons hidden" id="automate-be-icons">
+										<img src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
+										<img src="img/tech-icons/nodejs-logo.png" alt="node logo">
+										<img src="img/tech-icons/express-logo.svg" alt="express logo">
+										<img src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
+									</div>
+									<div class="project-devops-icons hidden" id="automate-do-icons">
+										<img src="img/tech-icons/github-logo.png" alt="github logo">
+										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+									
+							<div class="col-2 hidden"  id="automate-info">
+							<div class="project-info">
+									<h2>Year</h2>
+									<span>2018</span>
+									<h4>URL</h4>
+									<a href="https://fast-meadow-25618.herokuapp.com/">https://fast-meadow-25618.herokuapp.com/</a>
+									<h4>Repo</h4>
+									<a href="https://github.com/kdxcii/my-automate-client">https://github.com/kdxcii/my-automate-client</a>
+							</div>
+								
+								<div class="project-codebase">
+									<h1>Codebase</h1>
+									<p>AutoMate is intended to help vehicle owners ( cars, recreational vehicles, motorcycles ) track and log their vehicle
+										maintenance in one uniform web application. Add vehicles and start tracking by adding the most recent vehicle
+										maintenance records. When you forget when the last time you had done a particular maintenance, use this app for
+										reference.</p>
+								</div>
+							</div>
+	
+						</div>
+				</section>
 
 				<section id="projects-section">
 
 					<div class="project-container">
-						<div class="project-thumbnail">
-							<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
-						</div>
-						<div class="project-detail">
-								<div class="project-header">
-										<h2>Year</h2>
-										<h4>2018</h4>
-										<h4>URL</h4>
-										<a href="#">Link</a>
-							</div>
-							<div class="project-tech">
+
+
+
+						<div class="project-detail" id="tunein-detail">
+							
+							<div class="col-2">
+								<div class="project-thumbnail" id="tunein-thumbnail">
+									<button>
+										<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
+									</button>
+								</div>
+
+
+					
+							<div class="project-tech hidden" id="tunein-tech">
 								<h4>Web Stack</h4>
 								<div class="project-buttons">
-									<button class="project-tech-btn">
-										<span>Front End Logo</span>
+									<button class="project-tech-btn" id="tunein-fe-btn">
+										<img src="img/painter-palette.svg" alt="frontend logo">
 										<span>FRONTEND</span>
 									</button>
-									<button class="project-tech-btn">
-										<span>Back End Logo</span>
+									<button class="project-tech-btn" id="tunein-be-btn">
+										<img src="img/backend-icon.svg" alt="backend logo">
 										<span>BACKEND</span>
 									</button>
-									<button class="project-tech-btn">
-										<span>DEVOPS LOGO</span>
+									<button class="project-tech-btn" id="tunein-do-btn">
+										<img src="img/devops-icon.svg" alt="devops logo">
 										<span>DEVOPS</span>
 									</button>
 								</div>
-						</div>
-					</div>
-					</div>
 
-				<section id="projects-section">
-
-						<div class="project-container">
-							<div class="project-thumbnail">
-									<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
-							</div>
-							<div class="project-detail">
-								<div class="project-header">
-									<h2>Year</h2>
-									<h4>2018</h4>
-									<h4>URL</h4>
-									<a href="#">Link</a>
-								</div>
-								<div class="project-tech">
-									<h4>Web Stack</h4>
-									<div class="project-buttons">
-										<button class="project-tech-btn">
-											<span>Front End Logo</span>
-											<span>FRONTEND</span>
-										</button>
-										<button class="project-tech-btn">
-											<span>Back End Logo</span>
-											<span>BACKEND</span>
-										</button>
-										<button class="project-tech-btn">
-											<span>DEVOPS LOGO</span>
-											<span>DEVOPS</span>
-										</button>
+								<div class="project-tech-icons">
+									<div class="project-frontend-icons" id="tunein-fe-icons">
+										<img src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
+										<img src="img/tech-icons/css3-logo.svg" alt="css logo">
+										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
+									</div>
+									<div class="project-backend-icons hidden" id="tunein-be-icons">
+										<p> No Backend Used </p>
+									</div>
+									<div class="project-devops-icons hidden" id="tunein-do-icons">
+										<img src="img/tech-icons/github-logo.png" alt="github logo">
+										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
 									</div>
 								</div>
 							</div>
 						</div>
 
-				</section>
-				<section id="projects-section">
-						<div class="project-container">
-							<div class="project-thumbnail">
-								<img src="img/project-logos/sneakerlockerlogo.png" alt="project thumbnail">
-							</div>
-							<div class="project-detail">
-								<div class="project-header">
+
+							<div class="col-2 hidden" id="tunein-info">
+								<div class="project-info">
 									<h2>Year</h2>
-									<h4>2018</h4>
+									<span>2018</span>
 									<h4>URL</h4>
-									<a href="#">Link</a>
+									<a href="hhttps://kdxcii.github.io/tuneinjs/">https://kdxcii.github.io/tuneinjs/</a>
+									<h4>Repo</h4>
+									<a href="https://github.com/kdxcii/tuneinjs">https://github.com/kdxcii/tuneinjs</a>
 								</div>
-								<div class="project-tech">
-									<h4>Web Stack</h4>
-									<div class="project-buttons">
-										<button class="project-tech-btn">
-											<span>Front End Logo</span>
-											<span>FRONTEND</span>
-										</button>
-										<button class="project-tech-btn">
-											<span>Back End Logo</span>
-											<span>BACKEND</span>
-										</button>
-										<button class="project-tech-btn">
-											<span>DEVOPS LOGO</span>
-											<span>DEVOPS</span>
-										</button>
+								<div class="project-codebase">
+									<h1>Codebase</h1>
+									<p>This particular website utilizes third party API's to present artist and song data to the user. Once a song title
+										and Artist is submitted, results will be generated.</p>
+
+									<p>User inputs the song title and artist of the song into the search form to generate data relating to the desired
+										song. The user will see a thumbnail of the song provided by Google Search API. Upon clicking the the thumbnail,
+										the user is taken to YouTube hosted music 'video'. Furthermore, users will be able to see lyrics and the next three
+										upcoming concert events for the related artist and song.</p>
+
+								</div>
+							</div>
+								
+							
+				</section>
+
+				<section id="projects-section">
+					<div class="project-container">
+
+
+
+						<div class="project-detail" id="sneakerlocker-detail">
+							<div class="col-2">
+								<div class="project-thumbnail" id="sneakerlocker-thumbnail">
+									<button>
+										<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
+									</button>
+								</div>
+
+							<div class="project-tech hidden" id="sneakerlocker-tech">
+								<h4>Web Stack</h4>
+								<div class="project-buttons">
+									<button class="project-tech-btn" id="sneakerlocker-fe-btn">
+										<img src="img/painter-palette.svg" alt="frontend logo">
+										<span>FRONTEND</span>
+									</button>
+									<button class="project-tech-btn" id="sneakerlocker-be-btn">
+										<img src="img/backend-icon.svg" alt="backend logo">
+										<span>BACKEND</span>
+									</button>
+									<button class="project-tech-btn" id="sneakerlocker-do-btn">
+										<img src="img/devops-icon.svg" alt="devops logo">
+										<span>DEVOPS</span>
+									</button>
+								</div>
+
+								<div class="project-tech-icons">
+									<div class="project-frontend-icons" id="sneakerlocker-fe-icons">
+										<img src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
+										<img src="img/tech-icons/css3-logo.svg" alt="css logo">
+										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
+									</div>
+									<div class="project-backend-icons hidden" id="sneakerlocker-be-icons">
+										<img src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
+										<img src="img/tech-icons/express-logo.svg" alt="express logo">
+										<img src="img/tech-icons/nodejs-logo.png" alt="node logo">
+										<img src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
+									</div>
+									<div class="project-devops-icons hidden" id="sneakerlocker-do-icons">
+										<img src="img/tech-icons/github-logo.png" alt="github logo">
+										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
 									</div>
 								</div>
 							</div>
 						</div>
 
+							<div class="col-2 hidden" id="sneakerlocker-info">
+								<div class="project-info">
+									<h2>Year</h2>
+									<span>2018</span>
+									<h4>URL</h4>
+									<a href="https://secret-mountain-26267.herokuapp.com//">https://secret-mountain-26267.herokuapp.com/</a>
+									<h4>Repo</h4>
+									<a href="https://github.com/kdxcii/tuneinjs">https://github.com/kdxcii/sneakerlocker</a>
+								</div>
+								<div class="project-codebase">
+									<h1>Codebase</h1>
+									<p>An easy way to itemize your sneaker collection into a digital catalogue. Shoe enthusiasts can add different pairs
+										of shoes to their owner account where they start to build a locker. Currently supports only the most popular sneaker
+										brands. Users can also view other owners lockers to compare collections.</p>
+								</div>
+							</div>
 				</section>
-				
-			</div>
-
-		</div>
-
-
-		<!-- CONTACT PAGE -->
-		<div id="contact" class="hidden">
-			<section id="contact-section">
-				<div class="contact-container">
 
 				</div>
-			</section>
-		</div>
 
-		</div>
+				</div>
+
+
+				<!-- CONTACT PAGE -->
+				<div id="contact" class="hidden">
+					<section id="contact-section">
+						<div class="contact-container">
+
+						</div>
+						<div id="contact-form-wrapper">
+							<form action="contact-form-handler.php" method="POST" name="contact-form">
+
+							</form>
+						</div>
+					</section>
+				</div>
+
+				</div>
 	</main>
 
 	<!-- FOOTER -->
@@ -403,25 +538,43 @@
 			<div class="item">
 				<h3>Menu</h3>
 				<ul>
-					<li><a href="#landing-overview" class="home-link">Home</a></li>
-					<li><a href="#about" class="about-link">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Blog</a></li>
+					<li>
+						<a href="#landing-overview" class="home-link">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="about-link">About</a>
+					</li>
+					<li>
+						<a href="#" class="projects-link">Projects</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
 				</ul>
 			</div>
 			<div class="item">
 				<h3>Social</h3>
 				<ul>
-					<li><a href="#">Github</a></li>
-					<li><a href="#">LinkedIn</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Twitch</a></li>
+					<li>
+						<a href="#">Github</a>
+					</li>
+					<li>
+						<a href="#">LinkedIn</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+					<li>
+						<a href="#">Twitch</a>
+					</li>
 				</ul>
 			</div>
 			<div class="item">
 				<h3>Lets Work!</h3>
 				<ul>
-					<li><a href="#">Contact</a></li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
 				</ul>
 			</div>
 		</div>
