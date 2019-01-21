@@ -1,41 +1,5 @@
 
 
-// EVENT HANDLERS
-// NAVIGATION
-// HOME
-$('.home-link').on('click', e => {
-	e.preventDefault();
-	console.log('home');
-	$('.splash-container').html('<h1>Looking For A Full Stack Web Developer?</h1>\
-	<p>I am a web developer living in Southern California looking to leave his mark.</p>\
-	<button class="contact-me button" href="#"> Contact </button>');
-	$('#splash-banner').height('1000');
-	$('#landing-overview').removeClass('hidden');
-	$('#about').addClass('hidden');
-	$('#projects').addClass('hidden');
-});
-
-//ABOUT
-$('.about-link').on('click', e => {
-	e.preventDefault();
-	console.log('about');
-	$('#landing-overview').addClass('hidden');
-	$('#about').removeClass('hidden');
-	$('#projects').addClass('hidden');
-
-})
-
-// PROJECTS
-$('.projects-link').on('click', e => {
-	e.preventDefault();
-	console.log('projects');
-	$('.splash-container').html('<h1>Projects</h1>');
-	$('#splash-banner').height('500')
-	$('#landing-overview').addClass('hidden');
-	$('#about').addClass('hidden');
-	$('#projects').removeClass('hidden');
-})
-
 // CONTACT
 
 // SCROLL HANDLERS

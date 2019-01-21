@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kevin Crawford</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/component.css" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="js/segment.min.js"></script>
+	<script src="js/ease.min.js"></script>
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav role="navigation">
+		<div id="menu-container">
+			<div id="menu-horizontal">
+
+				<div id="menu-name-wrapper">
+					<p>Kevin Crawford</p>
+				</div>
+
+				<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+					<svg width="1000px" height="1000px">
+						<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathB" d="M 300 500 L 700 500"></path>
+						<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+					<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+				</div>
+
+				<div id="nav-large" class="stroke">
+					<ul>
+						<li class="home-link">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="about-link">
+							<a href="about.html">About</a>
+						</li>
+						<li class="projects-link">
+							<a href="projects.html">Projects</a>
+						</li>
+						<li>
+							<a href="contact.html" class="underline">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- NAVIGATION LIST ITEMS MOBILE -->
+		<div id="menu-list" class="menu-list hidden">
+			<div class="list__item">
+				<a href="index.html" class="home-link ">Home</a>
+			</div>
+			<div class="list__item">
+				<a href="about.html" class="about-link">About</a>
+			</div>
+			<div class="list__item">
+				<a href="projects.html" class="projects-link">Projects</a>
+			</div>
+			<div class="list__item">
+				<a href="contact.html" class="contact-link underline">Contact</a>
+			</div>
+		</div>
+
+	</nav>
+
+
+
+	<main role="main">
+
+		
+		<div id="content-wrapper">
+				<section id="splash-banner" style="height:550px">
+						<div id="contact">
+								<section id="contact-section">
+									<div class="contact-container">
+										<h1> Contact </h1>
+									</div>
+									<div id="contact-form-wrapper">
+										<form action="contact-form-handler.php" method="POST" name="contact-form">
+			
+										</form>
+									</div>
+								</section>
+						</div>
+						</div>
+					</section>
+				<!-- CONTACT PAGE -->
+			
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer role="contentinfo">
+		<div class="container">
+			<div class="item">
+				<h3>Menu</h3>
+				<ul>
+					<li>
+						<a href="index.html" class="home-link">Home</a>
+					</li>
+					<li>
+						<a href="about.html" class="about-link">About</a>
+					</li>
+					<li>
+						<a href="projects.html" class="projects-link">Projects</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="item">
+				<h3>Social</h3>
+				<ul>
+					<li>
+						<a href="#">Github</a>
+					</li>
+					<li>
+						<a href="#">LinkedIn</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+					<li>
+						<a href="#">Twitch</a>
+					</li>
+				</ul>
+			</div>
+			<div class="item">
+				<h3>Lets Work!</h3>
+				<ul>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- SCRIPTS -->
+	<script src="js/component.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

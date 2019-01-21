@@ -102,6 +102,10 @@ nav {
   transition: all .5s;
 }
 
+.underline {
+	border: .5px solid;
+}
+
 .stroke ul li a {
 	position: relative;
 }
@@ -473,6 +477,7 @@ button.project-tech-btn:focus {
 	border: none;
 	display: block;
 	margin: auto;
+	padding: 0;
 }
 
 .project-thumbnail button:hover {
