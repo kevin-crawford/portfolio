@@ -205,7 +205,7 @@ nav a {
 
 /* SPLASH BANNER */
 #splash-banner {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center; 
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/kdouglas-portfolio/img/tech-icons/landscape-splash/16.svg') no-repeat center; 
 	height: 1000px;
 	width: 100%;
 	margin: 0;
@@ -241,7 +241,6 @@ nav a {
 
 /* BUTTON STYLING */
 .button {
-	border-top: 1px solid #000000;
 	background: #65a9d7;
 	background: -webkit-gradient(linear, left top, left bottom, from(#78ab71), to(#65a9d7));
 	background: -webkit-linear-gradient(top, #78ab71, #65a9d7);
@@ -535,8 +534,14 @@ button.project-tech-btn:focus {
 	justify-content: center;
 }
 #projects-section {
-	margin-left: 50px;
+	margin: 10px;
 }
+
+#projects-section header {
+	margin-left: 10px;
+}
+
+
 #automate-info,
 #tunein-info,
 #sneakerlocker-info {
@@ -730,7 +735,7 @@ button.submit {
 #email p {
 	margin: 0;
 	font-family: arial;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 #contact-form-wrapper textarea {
@@ -739,7 +744,7 @@ button.submit {
 	margin: 10px auto;
 	display: block;
 	max-width: 500px;
-	font-size: 22px;
+	font-size: 16px;
 }
 /* FOOTER */
 
