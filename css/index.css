@@ -173,7 +173,7 @@ nav a {
 	float: right;
 	color: white;
 	padding: 20px 55px 0 0;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 #menu-name-wrapper p {
@@ -474,7 +474,7 @@ nav a {
 }
 
 .edu-icon {
-	max-width: 150px;
+	max-width: 100px;
 	max-height: 150px;
 	margin: 0 10px;
 }
@@ -566,13 +566,6 @@ button.project-tech-btn:focus {
 .project-info h4 {
 	margin-bottom: 5px;
 }
-/* 
-.project-codebase,
-.project-thumbnail,
-.project-tech,
-.project-info {
-	padding: 10px;
-} */
 
 .project-thumbnail img {
 	display: block;
@@ -794,8 +787,21 @@ footer .container {
 /* -------- MEDIA QUERIES --------------- */
 
 @media(max-width: 550px) {
+
+	nav a {
+		font-size: 16px;
+	}
+
+	.nav-right p {
+		font-size: 14px;
+	}
+
+	#selfie img {
+		width: 125px;
+	}
+
 	.tech-icon {
-		max-width:  100px;
+		max-width:  75px;
 	}
 
 	#contact-info {
@@ -803,8 +809,42 @@ footer .container {
 		margin-right: 15px;
 	}
 
+	#about-title h2 {
+		font-size: 18px;
+	}
+
+	#about li {
+		font-size: 12px;
+	}
+
+	#about h4 {
+		font-size: 14px;
+	}
+
+	#about h3 {
+		font-size: 28px;
+	}
+
+
+	.job-icon {
+		width: 15%;
+	}
+
+	.job-detail {
+		width: 80%;
+	}
+	.job-icon img {
+    max-width: 45px;
+    max-height: 100px;
+    margin: 20px 0px;
+	}
+
 	#splash-banner {
 		height: 800px;
+	}
+
+	#landing-overview h2 {
+		font-size: 42px;
 	}
 
 	.splash-container p {
@@ -812,15 +852,17 @@ footer .container {
 	}
 
 	.button {
-		padding: 10px 15px;
+		padding: 15px 20px;
 		font-size: 16px;
 	}
-	.job-detail {
-		width: 95%;
-	}
+
 	.job-title,
 	#contact-form-wrapper {
 		width: 100%
+	}
+
+	.job-container {
+		margin: 0px auto;
 	}
 
 	.project-thumbnail,
