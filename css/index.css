@@ -205,7 +205,7 @@ nav a {
 
 /* SPLASH BANNER */
 #splash-banner {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/kdouglas-portfolio/img/tech-icons/landscape-splash/16.svg') no-repeat center; 
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.imgur.com/3r67swk.jpg') no-repeat center; 
 	height: 1000px;
 	width: 100%;
 	margin: 0;
