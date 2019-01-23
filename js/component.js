@@ -89,13 +89,15 @@
 			inAC(segmentA);
 			inB(segmentB);
 			inAC(segmentC);
-
-			menu.className = 'menu-list menu-list--active';
+			$('#menu-container').addClass('menu-open');
+			$('.menu-social-icon').addClass('hidden');
+			menu.className = 'menu-list menu-list--active menu-open';
 		} else {
 			outAC(segmentA);
 			outB(segmentB);
 			outAC(segmentC);
-
+			$('#menu-container').removeClass('menu-open');
+			$('.menu-social-icon').removeClass('hidden');
 			menu.className = 'menu-list hidden';
 		}
 		toCloseIcon = !toCloseIcon;

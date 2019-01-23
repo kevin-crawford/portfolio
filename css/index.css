@@ -24,29 +24,55 @@ html {
 }
 
 .col-2 {
-	width: 50%;
+	width: 45%;
 }
 
 h2 {
 	font-family: montserrat;
+	font-weight: 100;
 }
 
 h3 {
-	font-family: lora, serif;
+	font-family: Avenir, serif;
+	font-size: 36px;
+	margin: 10px 10px;
+}
+
+h4 {
+	font-family: Avenir, serif;
 }
 
 p {
 	font-family: 'Hind Madurai', sans-serif;
 }
+
+.nav-right {
+	float: right;
+	font-size: 16px;
+}
+
+
+.nav-right p {
+	display: inline;
+	margin: 5px;
+}
+
+.nav-right img,
+#menu-name-wrapper img {
+	width: 28px;
+	padding: 0 5px;
+	float: right;
+}
+
 main {
 	margin-left: 10px;
 	margin-right: 10px;
-	padding: 0 10%;
+	padding: 10px 0px;
 	-moz-box-shadow: 0 0 5px 5px #888;
 	-webkit-box-shadow: 0 0 5px 5px#888;
 	box-shadow: 0 0 30px 5px #888;
 	position: relative;
-	top: -45px;
+	top: -100px;
 	background: white;
 	border-radius: 10px;
 }
@@ -58,6 +84,11 @@ main {
 
 main p {
 	line-height: 1.5;
+	text-align: justify;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: Roboto;
+	color: #474646;
 }
 
 main ul {
@@ -87,13 +118,14 @@ nav {
 	display: inline-block;
 }
 
-#nav-large ul li a {
-	display: block;
+#nav-large ul li a,
+.list__item a {
 	padding: 5px;
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	margin: 0 10px;
+	margin: 0 11px;
+	font-family: Avenir
 }
 
 #nav-large ul li a,
@@ -141,13 +173,22 @@ nav a {
 	float: right;
 	color: white;
 	padding: 20px 55px 0 0;
+	font-size: 18px;
+}
+
+#menu-name-wrapper p {
+	margin: 5px;
 }
 
 #menu-container{
 	transition: background-color 0.2s ease;
 }
 
-#menu-container.scrolling {
+#menu-wrapper {
+	padding-left: 21px;
+}
+
+.scrolling {
 	transition: background-color 0.5s ease;
 	background-color: #212121 !important;
 	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);
@@ -156,7 +197,7 @@ nav a {
 
 #menu-horizontal {
 	max-width: 1100px;
-	height: 85px;
+	height: 75px;
 	margin: auto;
 }
 
@@ -179,10 +220,9 @@ nav a {
 }
 
 #splash-banner h1 {
-	text-align: center;
 	font-family: montserrat;
 	color: cornsilk;
-	font-size: 75px;
+	font-size: 62px;
 }
 
 .splash-container {
@@ -193,8 +233,8 @@ nav a {
 }
 
 
-#splash-banner p {
-	font-size: 30px;
+.splash-container p {
+	font-size: 22px;
 	color: white;
 }
 
@@ -232,6 +272,40 @@ nav a {
 	background: #3281b5;
 	}
 
+
+.submit {
+		border-top: 1px solid #0a0a0a;
+		background: #3e9c62;
+		margin: 5px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#3e9c62), to(#3e9c62));
+		background: -webkit-linear-gradient(top, #3e9c62, #3e9c62);
+		background: -moz-linear-gradient(top, #3e9c62, #3e9c62);
+		background: -ms-linear-gradient(top, #3e9c62, #3e9c62);
+		background: -o-linear-gradient(top, #3e9c62, #3e9c62);
+		padding: 5px 10px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+		box-shadow: rgba(0,0,0,1) 0 1px 0;
+		text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		color: white;
+		font-size: 24px;
+		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+		text-decoration: none;
+		vertical-align: middle;
+		}
+ .submit:hover {
+		border-top-color: #7af588;
+		background: #7af588;
+		color: black;
+		}
+ .submit:active {
+		border-top-color: #1b435e;
+		background: #1b435e;
+		}
+
 /* LANDING PAGE */
 .hidden {
 	transition: display 0.2s ease;
@@ -240,7 +314,7 @@ nav a {
 
 .skills-container {
 	display: flex;
-	flex-direction: row wrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
@@ -265,11 +339,15 @@ nav a {
 
 .skills-item {
 	margin: auto;
-	width: 300px;
+	max-width: 350px;
 	text-align: center;
 	padding: 20px;
 }
 
+
+.skills-item h3 {
+	font-size: 22px;
+}
 
 .projects-container h3 {
 	text-align: center;
@@ -283,11 +361,19 @@ nav a {
 }
 
 #landing-overview h2 {
-	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 15px;
+	padding-left: 25px;
+	font-size: 62px;
+	margin: 0;
 }
 
+.projects {
+	margin-top: 40px;
+}
+
+.projects p {
+	padding-left: 30px;
+	color: grey;
+}
 .projects-thumbnail img {
 	margin: auto;
 	text-align: center;
@@ -303,10 +389,8 @@ nav a {
 	padding-bottom: 75px;
 }
 
-#selfie,
-#about h3 {
+#selfie {
 	text-align: center;
-	margin-top: 40px;
 }
 
 #selfie img {
@@ -320,26 +404,35 @@ nav a {
 #about-title {
 	text-align: center;
 	margin-top: -80px;
-	margin-bottom: 80px;
 }
 
 #about li {
 	line-height: 1.5em;
+	font-family: 'Hind Madurai', sans-serif;
 }
 
 .job-container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	padding: 75px;
-	margin: auto;
+	margin: 75px;
+	max-width: 850px;
+	margin: 55px auto;
+}
+
+.job-container::before{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 60px;
 	border-bottom: 1px solid black;
 }
 
+
+
 .job-title {
 	margin: auto;
-	width: 75%
+	width: 100%
 }
 
 .job-title h4 {
@@ -347,8 +440,8 @@ nav a {
 }
 
 .job-detail {
-	margin: auto;
-	width: 100%;
+	margin: 20px auto;
+	width: 80%;
 }
 .job-detail ul {
 	list-style-type: none;
@@ -357,22 +450,25 @@ nav a {
 
 .job-detail li {
 	padding: 5px 0;
+	font-family: 'Hind Madurai', sans-serif;
 }
 
 .job-icon {
+	width: 20%
+}
+.job-icon img {
 	max-width: 100px;
 	max-height: 100px;
-	margin: auto 5px;
+	margin: 20px 5px;
 }
 
 .edu-container {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 10px;
-	margin-bottom: 80px;
-	margin: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 750px;
+    margin: auto;
 }
 
 .edu-detail {
@@ -390,13 +486,14 @@ nav a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	padding: 50px;
 	justify-content: space-evenly;
 	margin: auto;
 }
 
 .tech-icon {
-	max-width: 150px;
-	margin: 35px;
+	max-width: 100px;
+	margin: 20px;
 }
 
 /* PROJECT PAGE VIEW */
@@ -404,10 +501,11 @@ nav a {
 .project-detail {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 	align-items: center;
-	border-top: 1px solid grey;
 	padding-top: 25px;
 }
+
 
 .project-frontend-icons {
 	align-items: center;
@@ -436,6 +534,15 @@ button.project-tech-btn:focus {
 	display: flex;
 	justify-content: center;
 }
+#projects-section {
+	margin-left: 50px;
+}
+#automate-info,
+#tunein-info,
+#sneakerlocker-info {
+	background-color: #ececec;
+	padding: 25px;
+}
 
 .project-tech-icons img {
 	width: 100px;
@@ -444,6 +551,12 @@ button.project-tech-btn:focus {
 
 .project-info h2 {
 	margin-bottom: 5px;
+}
+
+.project-info a {
+	font-family: 'Hind Madurai', sans-serif;
+	text-decoration: none;
+	color: purple;
 }
 
 .project-info h4 {
@@ -472,6 +585,15 @@ button.project-tech-btn:focus {
 	padding-top: 40px;
 }
 
+.project-detail::before {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+	padding-top: 20px;
+	border-top: 1px solid black;
+}
+
 .project-thumbnail button {
 	cursor: pointer;
 	border: none;
@@ -490,8 +612,135 @@ button.project-tech-btn:focus {
 	display: block;
 	margin: 15px auto;
 }
+.project-info p,
+.project-info a {
+	margin-left: 30px;
+}
+
+.project-info p {
+	font-size: 30px;
+	margin: 10px 30px;
+}
+/* CONTACT */
+
+button.submit {
+  width: 90%;
+	display: block;
+	margin: 10px auto;
+}
+.contact-wrapper img {
+	width: 25px;
+	margin-right: 5px;
+	margin-top: 5px
+}
+
+.contact-wrapper li {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.contact-container {
+	max-width: 1140px;
+    width: 85%;
+    align-content: center;
+    margin: auto;
+}
+
+.contact-container p {
+	font-size: 16px;
+	color: white;
+	max-width: 436px;
+}
+#contact-section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 25px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#form-info {
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#contact-form-wrapper label {
+	font-family: montserrat;
+	
+}
+
+#form-info label {
+	width: 30%;
+	padding: 15px;
+}
+#form-info input {
+	font-size: 22px;
+	padding: 5px;
+	margin: 5px;
+	width: 61%;
+}
+
+#form-message {
+	margin-top: 25px;
+}
+
+#form-message label {
+	padding: 10px 0px;
+}
+#contact-info {
+	width: 30%;
+	padding: 50px 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#contact-form-wrapper {
+	width: 70%;
+	padding: 15px;
+}
+
+#contact-form-wrapper form {
+	max-width: 500px;
+	padding: 5px;
+}
+
+.contact-wrapper {
+	text-align: left;
+	margin: 10px;
+}
+
+.contact-wrapper a:hover {
+	color: red;
+	font-size: 20px;
+}
+.contact-wrapper a {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: avenir;
+}
 
 
+#email p {
+	margin: 0;
+	font-family: arial;
+  font-size: 11px;
+}
+
+#contact-form-wrapper textarea {
+	width: 90%;
+	min-height: 200px;
+	margin: 10px auto;
+	display: block;
+	max-width: 500px;
+	font-size: 22px;
+}
 /* FOOTER */
 
 .item {
@@ -506,6 +755,8 @@ button.project-tech-btn:focus {
 
 .item li {
 	margin: 20px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
 }
 
 .item a {
@@ -519,6 +770,10 @@ footer {
 	padding-bottom: 20px;
 	position: absolute;
 	width: 100%;
+}
+
+footer h3 {
+	font-size: 18px;
 }
 
 
@@ -539,35 +794,65 @@ footer .container {
 		max-width:  100px;
 	}
 
-	.job-title {
+	#contact-info {
+		width: 100%;
+		margin-right: 15px;
+	}
+
+	.job-detail {
+		width: 95%;
+	}
+	.job-title,
+	#contact-form-wrapper {
 		width: 100%
 	}
 
-
-}
-
-
-@media(max-width: 750px){
-	.col-2 {
+	.project-thumbnail,
+	.project-tech {
 		width: 100%;
+		display: block;
 	}
 
 	.job-container {
 		padding: 25px;
 	}
+
+	.col-2 {
+		width: 100%;
+	}
+
+	#form-info label {
+		width: 40%
+	}
+
 }
 
-@media(max-width: 950px) {
 
-	.project-thumbnail img{
-		height: 100%;
+@media(min-width: 551px) and (max-width: 767px){
+	.col-2 {
+		width: 100%;
+		display: flex;
+	}
+
+	.job-container {
+		padding: 25px;
+	}
+
+	.project-thumbnail,
+	.project-tech {
 		width: 100%
 	}
 
-	/* section titles */
-	/* main {
-		text-align: center;
-	} */
+
+}
+
+@media(min-width: 552px) and (max-width: 950px) {
+.job-container {
+		padding: 25px;
+	}
+	.project-thumbnail img{
+		width: 100%;
+	}
 
 	.project-tech-btn {
 		padding: 10px 10px;
@@ -584,7 +869,7 @@ footer .container {
 		justify-content: start;
 	}
 	
-	.project-tech,
+	
 	.project-codebase,
 	.job-detail {
 		width: 100%;
@@ -611,16 +896,17 @@ footer .container {
 	}
 }
 
-/* LARGE SCREEN */
-@media(max-width: 1140px) {
+
+@media(max-width: 950px) {
 	#nav-large {
 		display: none;
 	}
 }
-
-@media(min-width: 1140px ){
+/* LARGE SCREEN */
+@media screen and (min-width: 951px){
 	.menu-list,
-	.menu-icon-wrapper {
+	.menu-icon-wrapper,
+	svg {
 		display: none;
 	}
 }

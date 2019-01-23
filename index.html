@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kevin Crawford</title>
+	<title>Kevin Crawford | Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat|Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/component.css" />
@@ -23,9 +23,11 @@
 		<div id="menu-container">
 			<div id="menu-horizontal">
 
-				<div id="menu-name-wrapper">
-					<p>Kevin Crawford</p>
-				</div>
+					<div id="menu-name-wrapper">
+						<p>Kevin Crawford</p>
+						<a href="https://github.com/kdxcii" class="menu-social-icon"><img src="img/tech-icons/github-logo.svg" alt="github icon"></a>
+						<a href="https://www.linkedin.com/in/kdxcii/" class="menu-social-icon"><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"></a>
+					</div>
 
 				<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
 					<svg width="1000px" height="1000px">
@@ -38,18 +40,10 @@
 
 				<div id="nav-large" class="stroke">
 					<ul>
-						<li class="home-link">
-							<a href="index.html" class="underline">Home</a>
-						</li>
-						<li class="about-link">
-							<a href="about.html">About</a>
-						</li>
-						<li class="projects-link">
-							<a href="projects.html">Projects</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
+						<li class="home-link"><a href="index.html" class="underline">Home</a></li>
+						<li class="about-link"><a href="about.html">About</a></li>
+						<li class="projects-link"><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 
@@ -58,27 +52,30 @@
 
 		<!-- NAVIGATION LIST ITEMS MOBILE -->
 		<div id="menu-list" class="menu-list hidden">
-			<div class="list__item">
-				<a href="index.html" class="home-link underline">Home</a>
+			<div id="menu-wrapper">
+				<div class="list__item">
+					<a href="index.html" class="home-link underline">Home</a>
+					<a href="https://github.com/kdxcii" class="nav-right"><img src="img/tech-icons/github-logo.svg"><p>Github</p></a>
+				</div>
+				<div class="list__item">
+					<a href="about.html" class="about-link">About</a>
+					<a href="https://www.linkedin.com/in/kdxcii/" class="nav-right"><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"><p>LinkedIn</p></a>
+				</div>
+				<div class="list__item">
+					<a href="projects.html" class="projects-link">Projects</a>
+				</div>
+				<div class="list__item">
+					<a href="contact.html" class="contact-link">Contact</a>
+				</div>
 			</div>
-			<div class="list__item">
-				<a href="about.html" class="about-link">About</a>
-			</div>
-			<div class="list__item">
-				<a href="projects.html" class="projects-link">Projects</a>
-			</div>
-			<div class="list__item">
-				<a href="contact.html" class="contact-link">Contact</a>
-			</div>
-		</div>
-
+		</div>	
 	</nav>
 
 	<section id="splash-banner">
 		<div class="splash-container">
 			<h1>Looking For A Full Stack Web Developer?</h1>
 			<p>I am a web developer living in Southern California hungry to leave his mark.</p>
-			<button class="contact-me button" href="#"> Contact </button>
+			<a href="contact.html"><button class="contact-me button"> Contact </button></a>
 		</div>
 	</section>
 
@@ -91,445 +88,45 @@
 						<div class="skills-item">
 							<img src="img/comm-bubble.svg" alt="communication logo">
 							<h3>Communication</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+							<p>Willing to speak up in meetings, whether they’re with staff or customers. Listen. The best communicators spend as much time listening as they do talking.</p>
 						</div>
 						<div class="skills-item">
 							<img src="img/brain-icon.svg" alt="critical thinking logo">
 							<h3>Critical Thinking</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+							<p>Take a methodical approach that involves asking questions, uncovering false assumptions, and evaluating various approaches to the problem at hand before deciding on the best path forward.</p>
 						</div>
 						<div class="skills-item">
 							<img src="img/priority-calander.svg" alt="prioritize logo">
-							<h3>Prioritization</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula ex eget ultrices hendrerit. Nulla viverra
-								sem vitae sapien tempus ultricies. Sed elementum viverra interdum.</p>
+							<h3>Problem Solving</h3>
+							<p>When approaching a new problem, always view it objectively, even if it’s one you created accidentally. Once you know what exactly the problem is, find out what caused it. Finding a solution is easy once you know the cause.</p>
 						</div>
 					</div>
 				</section>
 
 				<section class="projects section">
 					<h2>Projects</h2>
+					<p>Select An Icon For More Information</p>
 					<div class="projects-container">
-						<div class="projects-thumbnail">
+						<div class="project-thumbnail">
 
-							<a href="index.html#automate-detail">
+							<a href="projects.html#automate-detail">
 								<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
 							</a>
 						</div>
-						<div class="projects-thumbnail">
-							<a href="index.html#tunein-detail">
+						<div class="project-thumbnail">
+							<a href="projects.html#tunein-detail">
 								<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
 							</a>
 						</div>
-						<div class="projects-thumbnail">
-							<a href="index.html#sneakerlocker-detail">
+						<div class="project-thumbnail">
+							<a href="projects.html#sneakerlocker-detail">
 								<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
 							</a>
 						</div>
 					</div>
 				</section>
 			</div>
-
-
-			<!--          ABOUT ME PAGE VIEW           -->
-			<div id="about" class="hidden">
-
-				<div id="selfie">
-					<img src="img/kevinmocktrimpic.png" alt="img of me">
-				</div>
-				<div id="about-title">
-					<h3>Kevin Douglas Crawford</h2>
-						<h3>Full Stack Engineer</h6>
-				</div>
-
-				<section id="work-section">
-					<h3>Work History</h3>
-					<div class="job-container">
-						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
-						<div class="job-title">
-							<h4>Upland Unified School District</h4>
-							<h4>Substitute Teacher</h4>
-							<h4>xx/xx/xx</h4>
-						</div>
-						<div class="job-detail">
-							<ul>
-								<li>
-									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages students
-									to participate
-								</li>
-								<li>
-									Assign classwork and homework as necessary, according to lesson plans
-								</li>
-								<li>
-									Modify teaching styles to fit the learning styles of various students
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="job-container">
-						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
-						<div class="job-title">
-							<h4>Upland Unified School District</h4>
-							<h4>Substitute Teacher</h4>
-							<h4>xx/xx/xx</h4>
-						</div>
-						<div class="job-detail">
-							<ul>
-								<li>
-									Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning
-								</li>
-								<li>
-									Assign classwork and homework as necessary, according to lesson plans
-								</li>
-								<li>
-									Maintain a well-managed classroom and positive learning environment
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="job-container">
-						<img class="job-icon" src="img/uplanduni-logo.jpg" alt="upland unified logo">
-						<div class="job-title">
-							<h4>Upland Unified School District</h4>
-							<h4>Substitute Teacher</h4>
-							<h4>xx/xx/xx</h4>
-						</div>
-						<div class="job-detail">
-							<ul>
-								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages
-									students to participate
-								</li>
-								<li>
-									Assign classwork and homework as necessary, according to lesson plans
-								</li>
-								<li>
-									Modify teaching styles to fit the learning styles of various students
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<section id="edu-section">
-					<h3>Education</h3>
-					<div class="edu-container">
-						<div class="edu-detail">
-							<ul>
-								<li>California State University San Bernardino</li>
-								<li>Bachelors of Science / Health Science</li>
-								<li>Graduated: 2015</li>
-							</ul>
-						</div>
-						<img class="edu-icon" src="img/csusb-logo.png" alt="CSUSB logo">
-					</div>
-					<div class="edu-container">
-						<div class="edu-detail">
-							<ul>
-								<li>ThinkFul Student</li>
-								<li>Full Stack Flex Engineering Program</li>
-								<li>Graduated: 2018</li>
-							</ul>
-						</div>
-						<img class="edu-icon" src="img/thinkful-logo.png" alt="thinkful logo">
-					</div>
-				</section>
-
-				<section id="tech-section">
-					<h3>Technologies</h3>
-					<div class="tech-container">
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/babel-logo.svg" alt="babel logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/css3-logo.svg" alt="css logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/express-logo.svg" alt="express logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/github-logo.png" alt="github logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/jest-logo.svg" alt="jest logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/npm-logo.svg" alt="npm logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/nodejs-logo.png" alt="node js logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/react-logo.svg" alt="react logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/redux-logo.svg" alt="redux logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/webpack-logo.svg" alt="webpack logo">
-						</div>
-					</div>
-				</section>
-
-			</div>
-
-			<!-- PROJECTS PAGE VIEW -->
-			<div id="projects" class="hidden">
-				<section id="projects-section">
-						<h1> Recent Work </h1>
-						<p>Click an icon to view more information</p>
-					<div class="project-container">
-						<div class="project-direction">
-						</div>
-						<div class="project-detail" id="automate-detail">
-							<div class="col-2">
-								<div class="project-thumbnail" id="automate-thumbnail">
-									<button>
-										<img src="img/project-logos/automatelogo.png" alt="sneaker locker banner">
-									</button>
-								</div>
-
-								<div class="project-tech hidden" id="automate-tech">
-									<h4>Web Stack</h4>
-								
-								<div class="project-buttons">
-									<button class="project-tech-btn" id="automate-fe-btn">
-										<img src="img/painter-palette.svg" alt="frontend logo">
-										<span>FRONTEND</span>
-									</button>
-									<button class="project-tech-btn" id="automate-be-btn">
-										<img src="img/backend-icon.svg" alt="backend logo">
-										<span>BACKEND</span>
-									</button>
-									<button class="project-tech-btn" id="automate-do-btn">
-										<img src="img/devops-icon.svg" alt="automate-devops">
-										<span>DEVOPS</span>
-									</button>
-								</div>
-
-								<div class="project-tech-icons">
-									<div class="project-frontend-icons" id="automate-fe-icons">
-										<img src="img/tech-icons/react-logo.svg" alt="react logo">
-										<img src="img/tech-icons/redux-logo.svg" alt="redux logo">
-										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-									</div>
-									<div class="project-backend-icons hidden" id="automate-be-icons">
-										<img src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
-										<img src="img/tech-icons/nodejs-logo.png" alt="node logo">
-										<img src="img/tech-icons/express-logo.svg" alt="express logo">
-										<img src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
-									</div>
-									<div class="project-devops-icons hidden" id="automate-do-icons">
-										<img src="img/tech-icons/github-logo.png" alt="github logo">
-										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						
-									
-							<div class="col-2 hidden"  id="automate-info">
-							<div class="project-info">
-									<h2>Year</h2>
-									<span>2018</span>
-									<h4>URL</h4>
-									<a href="https://fast-meadow-25618.herokuapp.com/">https://fast-meadow-25618.herokuapp.com/</a>
-									<h4>Repo</h4>
-									<a href="https://github.com/kdxcii/my-automate-client">https://github.com/kdxcii/my-automate-client</a>
-							</div>
-								
-								<div class="project-codebase">
-									<h1>Codebase</h1>
-									<p>AutoMate is intended to help vehicle owners ( cars, recreational vehicles, motorcycles ) track and log their vehicle
-										maintenance in one uniform web application. Add vehicles and start tracking by adding the most recent vehicle
-										maintenance records. When you forget when the last time you had done a particular maintenance, use this app for
-										reference.</p>
-								</div>
-							</div>
-	
-						</div>
-				</section>
-
-				<section id="projects-section">
-
-					<div class="project-container">
-
-
-
-						<div class="project-detail" id="tunein-detail">
-							
-							<div class="col-2">
-								<div class="project-thumbnail" id="tunein-thumbnail">
-									<button>
-										<img src="img/project-logos/tuneinlogo.png" alt="sneaker locker banner">
-									</button>
-								</div>
-
-
-					
-							<div class="project-tech hidden" id="tunein-tech">
-								<h4>Web Stack</h4>
-								<div class="project-buttons">
-									<button class="project-tech-btn" id="tunein-fe-btn">
-										<img src="img/painter-palette.svg" alt="frontend logo">
-										<span>FRONTEND</span>
-									</button>
-									<button class="project-tech-btn" id="tunein-be-btn">
-										<img src="img/backend-icon.svg" alt="backend logo">
-										<span>BACKEND</span>
-									</button>
-									<button class="project-tech-btn" id="tunein-do-btn">
-										<img src="img/devops-icon.svg" alt="devops logo">
-										<span>DEVOPS</span>
-									</button>
-								</div>
-
-								<div class="project-tech-icons">
-									<div class="project-frontend-icons" id="tunein-fe-icons">
-										<img src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
-										<img src="img/tech-icons/css3-logo.svg" alt="css logo">
-										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-									</div>
-									<div class="project-backend-icons hidden" id="tunein-be-icons">
-										<p> No Backend Used </p>
-									</div>
-									<div class="project-devops-icons hidden" id="tunein-do-icons">
-										<img src="img/tech-icons/github-logo.png" alt="github logo">
-										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-							<div class="col-2 hidden" id="tunein-info">
-								<div class="project-info">
-									<h2>Year</h2>
-									<span>2018</span>
-									<h4>URL</h4>
-									<a href="hhttps://kdxcii.github.io/tuneinjs/">https://kdxcii.github.io/tuneinjs/</a>
-									<h4>Repo</h4>
-									<a href="https://github.com/kdxcii/tuneinjs">https://github.com/kdxcii/tuneinjs</a>
-								</div>
-								<div class="project-codebase">
-									<h1>Codebase</h1>
-									<p>This particular website utilizes third party API's to present artist and song data to the user. Once a song title
-										and Artist is submitted, results will be generated.</p>
-
-									<p>User inputs the song title and artist of the song into the search form to generate data relating to the desired
-										song. The user will see a thumbnail of the song provided by Google Search API. Upon clicking the the thumbnail,
-										the user is taken to YouTube hosted music 'video'. Furthermore, users will be able to see lyrics and the next three
-										upcoming concert events for the related artist and song.</p>
-
-								</div>
-							</div>
-								
-							
-				</section>
-
-				<section id="projects-section">
-					<div class="project-container">
-
-
-
-						<div class="project-detail" id="sneakerlocker-detail">
-							<div class="col-2">
-								<div class="project-thumbnail" id="sneakerlocker-thumbnail">
-									<button>
-										<img src="img/project-logos/sneakerlockerlogo.png" alt="sneaker locker banner">
-									</button>
-								</div>
-
-							<div class="project-tech hidden" id="sneakerlocker-tech">
-								<h4>Web Stack</h4>
-								<div class="project-buttons">
-									<button class="project-tech-btn" id="sneakerlocker-fe-btn">
-										<img src="img/painter-palette.svg" alt="frontend logo">
-										<span>FRONTEND</span>
-									</button>
-									<button class="project-tech-btn" id="sneakerlocker-be-btn">
-										<img src="img/backend-icon.svg" alt="backend logo">
-										<span>BACKEND</span>
-									</button>
-									<button class="project-tech-btn" id="sneakerlocker-do-btn">
-										<img src="img/devops-icon.svg" alt="devops logo">
-										<span>DEVOPS</span>
-									</button>
-								</div>
-
-								<div class="project-tech-icons">
-									<div class="project-frontend-icons" id="sneakerlocker-fe-icons">
-										<img src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
-										<img src="img/tech-icons/css3-logo.svg" alt="css logo">
-										<img src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-									</div>
-									<div class="project-backend-icons hidden" id="sneakerlocker-be-icons">
-										<img src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
-										<img src="img/tech-icons/express-logo.svg" alt="express logo">
-										<img src="img/tech-icons/nodejs-logo.png" alt="node logo">
-										<img src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
-									</div>
-									<div class="project-devops-icons hidden" id="sneakerlocker-do-icons">
-										<img src="img/tech-icons/github-logo.png" alt="github logo">
-										<img src="img/tech-icons/npm-logo.svg" alt="npm logo">
-									</div>
-								</div>
-							</div>
-						</div>
-
-							<div class="col-2 hidden" id="sneakerlocker-info">
-								<div class="project-info">
-									<h2>Year</h2>
-									<span>2018</span>
-									<h4>URL</h4>
-									<a href="https://secret-mountain-26267.herokuapp.com//">https://secret-mountain-26267.herokuapp.com/</a>
-									<h4>Repo</h4>
-									<a href="https://github.com/kdxcii/tuneinjs">https://github.com/kdxcii/sneakerlocker</a>
-								</div>
-								<div class="project-codebase">
-									<h1>Codebase</h1>
-									<p>An easy way to itemize your sneaker collection into a digital catalogue. Shoe enthusiasts can add different pairs
-										of shoes to their owner account where they start to build a locker. Currently supports only the most popular sneaker
-										brands. Users can also view other owners lockers to compare collections.</p>
-								</div>
-							</div>
-				</section>
-
-				</div>
-
-				</div>
-
-
-				<!-- CONTACT PAGE -->
-				<div id="contact" class="hidden">
-					<section id="contact-section">
-						<div class="contact-container">
-
-						</div>
-						<div id="contact-form-wrapper">
-							<form action="contact-form-handler.php" method="POST" name="contact-form">
-
-							</form>
-						</div>
-					</section>
-				</div>
-
-				</div>
+		</div>
 	</main>
 
 	<!-- FOOTER -->
@@ -538,43 +135,24 @@
 			<div class="item">
 				<h3>Menu</h3>
 				<ul>
-					<li>
-						<a href="index.html" class="home-link">Home</a>
-					</li>
-					<li>
-						<a href="about.html" class="about-link">About</a>
-					</li>
-					<li>
-						<a href="projects.html" class="projects-link">Projects</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="item">
 				<h3>Social</h3>
 				<ul>
-					<li>
-						<a href="#">Github</a>
-					</li>
-					<li>
-						<a href="#">LinkedIn</a>
-					</li>
-					<li>
-						<a href="#">Twitter</a>
-					</li>
-					<li>
-						<a href="#">Twitch</a>
-					</li>
+					<li><a href="https://github.com/kdxcii">Github</a></li>
+					<li><a href="https://www.linkedin.com/in/kdxcii/">LinkedIn</a></li>
+					<li><a href="https://twitter.com/kdxcii_">Twitter</a></li>
 				</ul>
 			</div>
 			<div class="item">
 				<h3>Lets Work!</h3>
 				<ul>
-					<li>
-						<a href="#">Contact</a>
-					</li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>

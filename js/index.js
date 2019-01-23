@@ -8,10 +8,45 @@
 	 let scroll = $(window).scrollTop();
 	 if(scroll >= 200 ) {
 	 $("#menu-container").addClass("scrolling");
+	
 	} else {
 			$("#menu-container").removeClass("scrolling");
 	}
  })
+
+ $(window).scroll(function(){
+	 let projectScrollHover = $(window).scrollTop();
+	 if(projectScrollHover >= 500) {
+		 $('#automate-tech').show(1000);
+		 $('#automate-info').show(1000);
+	 } else {
+		 $('#automate-tech').hide('slow');
+		 $('#automate-info').hide('slow')
+	 }
+ })
+
+ $(window).scroll(function(){
+	let projectScrollHover = $(window).scrollTop();
+	if(projectScrollHover >= 1000) {
+		$('#tunein-tech').show('slow');
+		$('#tunein-info').show('slow');
+	} else {
+		$('#tunein-tech').hide('slow');
+		$('#tunein-info').hide('slow')
+	}
+})
+
+$(window).scroll(function(){
+	let projectScrollHover = $(window).scrollTop();
+	if(projectScrollHover >= 1800) {
+		$('#sneakerlocker-tech').show('slow');
+		$('#sneakerlocker-info').show('slow');
+	} else {
+		$('#sneakerlocker-tech').hide('slow');
+		$('#sneakerlocker-info').hide('slow')
+	}
+})
+
 
 
 
@@ -88,17 +123,17 @@ $('#sneakerlocker-do-btn').on('click', e => {
 })
 
  // animation to hide and show project information
- $('#automate-thumbnail').click(function() {
-	$('#automate-tech').toggle('slow');
-	$('#automate-info').toggle('slow');
- })
+//  $('#automate-thumbnail').click(function() {
+// 	$('#automate-tech').toggle('slow');
+// 	$('#automate-info').toggle('slow');
+//  })
 
- $('#tunein-thumbnail').click(function() {
-	$('#tunein-tech').toggle('slow');
-	$('#tunein-info').toggle('slow');
- })
+//  $('#tunein-thumbnail').click(function() {
+// 	$('#tunein-tech').toggle('slow');
+// 	$('#tunein-info').toggle('slow');
+//  })
 
- $('#sneakerlocker-thumbnail').click(function() {
-	$('#sneakerlocker-tech').toggle('slow');
-	$('#sneakerlocker-info').toggle('slow');
- })
+//  $('#sneakerlocker-thumbnail').click(function() {
+// 	$('#sneakerlocker-tech').toggle('slow');
+// 	$('#sneakerlocker-info').toggle('slow');
+//  })

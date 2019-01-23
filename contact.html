@@ -58,95 +58,120 @@
 
 		<!-- NAVIGATION LIST ITEMS MOBILE -->
 		<div id="menu-list" class="menu-list hidden">
-			<div class="list__item">
-				<a href="index.html" class="home-link ">Home</a>
-			</div>
-			<div class="list__item">
-				<a href="about.html" class="about-link">About</a>
-			</div>
-			<div class="list__item">
-				<a href="projects.html" class="projects-link">Projects</a>
-			</div>
-			<div class="list__item">
-				<a href="contact.html" class="contact-link underline">Contact</a>
-			</div>
+				<div id="menu-wrapper">
+						<div class="list__item">
+							<a href="index.html" class="home-link underline">Home</a>
+							<a href="https://github.com/kdxcii" class="nav-right"><img src="img/tech-icons/github-logo.svg"><p>Github</p></a>
+						</div>
+						<div class="list__item">
+							<a href="about.html" class="about-link">About</a>
+							<a href="https://www.linkedin.com/in/kdxcii/" class="nav-right"><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"><p>LinkedIn</p></a>
+						</div>
+						<div class="list__item">
+							<a href="projects.html" class="projects-link">Projects</a>
+						</div>
+						<div class="list__item">
+							<a href="contact.html" class="contact-link">Contact</a>
+						</div>
+					</div>
 		</div>
-
 	</nav>
 
-
+	<section id="splash-banner" style="height:550px">
+		<div class="contact-container">
+			<h1> Contact Me </h1>
+			<p>Please fill in the details below and I will get back to you as soon as I can! Also note that I can be very busy on weekdays so please allow me up to 3 days to get back to you.</p>
+		</div>
+	</section>
 
 	<main role="main">
 
 		
 		<div id="content-wrapper">
-				<section id="splash-banner" style="height:550px">
-						<div id="contact">
-								<section id="contact-section">
-									<div class="contact-container">
-										<h1> Contact </h1>
+			<div id="contact">
+				<section id="contact-section">
+
+					<div id="contact-info">
+						<div class="contact-wrapper">
+								<h2>Lets Connect.</h2>
+								<ul>
+									<li><a href="https://www.linkedin.com/in/kdxcii/"><img src="img/tech-icons/linkedin-logo-blk.svg">LinkedIn</a></li>
+									<li><a href="https://github.com/kdxcii"><img src="img/tech-icons/github-logo-blk.svg"  alt="linkedin logo black">Github</a></li>
+									<li>
+										<img src="img/tech-icons/contact-email.svg" alt="email logo">
+										<div id="email">
+										<p>Email</p>
+										<p>kcdouglas92@gmail.com</p>
 									</div>
-									<div id="contact-form-wrapper">
-										<form action="contact-form-handler.php" method="POST" name="contact-form">
-			
-										</form>
-									</div>
-								</section>
+									</li>
+									
+								</ul>
 						</div>
+						<div class="contact-wrapper">
+							<h2>Social Media</h2>
+							<ul>
+								<li><a href="#"><img src="img/tech-icons/twitter-logo.svg" alt="twitter logo black">Twitter</a></li>
+								<li><a href="https://www.instagram.com/kdxcii/"><img src="img/tech-icons/instagram-logo.svg" alt="instagram logo black">Instagram</a></li>
+								<!-- <li><a href="https://twitter.com/kdxcii_" ><img src="img/tech-icons/slack-logo.svg" alt="slack logo">Slack</a></li> -->
+							</ul>
 						</div>
+					
+
+					</div>
+
+					<div id="contact-form-wrapper">
+						<h2>Send Me a Message</h2>
+						<form action="https://formspree.io/kcdouglas92@gmail.com" method="POST" />
+						<div id="form-info">
+							<label for="email"> Email	</label>
+								<input type="email" name="email" required>
+							<label for="Company">	Name </label>
+								<input type="text" name="name" required>
+							<label for="company">	Company	</label>
+								<input type="text" name="company" placeholder="Optional">
+						</div>
+						<div id="form-message">
+							<label for="message">	Content	</label>
+							<textarea name="message"></textarea>
+							 
+  						<button type="submit" class="submit">Send</button>
+							</form>
+						</div>
+					</div>
+
 					</section>
-				<!-- CONTACT PAGE -->
-			
-		</div>
+				</div>
+			</div>
 	</main>
 
 	<!-- FOOTER -->
 	<footer role="contentinfo">
-		<div class="container">
-			<div class="item">
-				<h3>Menu</h3>
-				<ul>
-					<li>
-						<a href="index.html" class="home-link">Home</a>
-					</li>
-					<li>
-						<a href="about.html" class="about-link">About</a>
-					</li>
-					<li>
-						<a href="projects.html" class="projects-link">Projects</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
+			<div class="container">
+				<div class="item">
+					<h3>Menu</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<h3>Social</h3>
+					<ul>
+						<li><a href="https://github.com/kdxcii">Github</a></li>
+						<li><a href="https://www.linkedin.com/in/kdxcii/">LinkedIn</a></li>
+						<li><a href="https://twitter.com/kdxcii_">Twitter</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<h3>Lets Work!</h3>
+					<ul>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="item">
-				<h3>Social</h3>
-				<ul>
-					<li>
-						<a href="#">Github</a>
-					</li>
-					<li>
-						<a href="#">LinkedIn</a>
-					</li>
-					<li>
-						<a href="#">Twitter</a>
-					</li>
-					<li>
-						<a href="#">Twitch</a>
-					</li>
-				</ul>
-			</div>
-			<div class="item">
-				<h3>Lets Work!</h3>
-				<ul>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+		</footer>
 	<!-- SCRIPTS -->
 	<script src="js/component.js"></script>
 	<script src="js/index.js"></script>
