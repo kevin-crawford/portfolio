@@ -914,9 +914,9 @@ footer .container {
 .job-container {
 		padding: 25px;
 	}
-	/* .project-thumbnail img{
-		width: 100%;
-	} */
+	.project-thumbnail img{
+		width: 50%;
+	}
 
 	.project-tech-btn {
 		padding: 10px 10px;
