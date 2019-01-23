@@ -206,7 +206,7 @@ nav a {
 /* SPLASH BANNER */
 #splash-banner {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.imgur.com/3r67swk.jpg') no-repeat center; 
-	height: 1000px;
+	height: 890px;
 	width: 100%;
 	margin: 0;
 	border: 0;
@@ -354,7 +354,7 @@ nav a {
 
 .projects-container {
 	display: flex;
-	flex-direction: row wrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	overflow: hidden;
 }
@@ -855,9 +855,9 @@ footer .container {
 .job-container {
 		padding: 25px;
 	}
-	.project-thumbnail img{
+	/* .project-thumbnail img{
 		width: 100%;
-	}
+	} */
 
 	.project-tech-btn {
 		padding: 10px 10px;
@@ -889,6 +889,7 @@ footer .container {
 	.skills-item {
 		height: 100%;
 		padding: 0;
+		margin: 25px auto;
 	}
 
 	.skills-container h2 {
@@ -907,6 +908,7 @@ footer .container {
 		display: none;
 	}
 }
+
 /* LARGE SCREEN */
 @media screen and (min-width: 951px){
 	.menu-list,
