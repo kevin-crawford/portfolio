@@ -567,13 +567,13 @@ button.project-tech-btn:focus {
 .project-info h4 {
 	margin-bottom: 5px;
 }
-
+/* 
 .project-codebase,
 .project-thumbnail,
 .project-tech,
 .project-info {
 	padding: 10px;
-}
+} */
 
 .project-thumbnail img {
 	display: block;
@@ -845,7 +845,7 @@ footer .container {
 
 	.project-thumbnail,
 	.project-tech {
-		width: 100%
+		width: 50%
 	}
 
 
