@@ -803,6 +803,9 @@ footer .container {
 		margin-right: 15px;
 	}
 
+	#splash-banner {
+		height: 800px;
+	}
 
 	.splash-container p {
 		font-size: 17px;
