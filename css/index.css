@@ -33,13 +33,13 @@ h2 {
 }
 
 h3 {
-	font-family: Avenir, serif;
+	font-family: montserrat;
 	font-size: 24px;
-	margin: 10px 10px;
+	margin: 10px 0px;
 }
 
 h4 {
-	font-family: Avenir, serif;
+	font-family: montserrat, serif;
 }
 
 p {
@@ -78,7 +78,7 @@ main {
 }
 
 #content-wrapper {
-	max-width: 1140px;
+	max-width: 850px;
 	margin: auto;
 }
 
@@ -125,7 +125,7 @@ nav {
 	color: white;
 	text-transform: uppercase;
 	margin: 0 11px;
-	font-family: Avenir
+	font-family: montserrat
 }
 
 #nav-large ul li a,
@@ -337,11 +337,14 @@ nav a {
 
 .skills-item {
 	margin: auto;
-	max-width: 350px;
+	max-width: 250px;
 	text-align: center;
 	padding: 20px;
 }
 
+.project-logo img{
+	width: 100%;
+}
 
 .skills-item h3 {
 	font-size: 22px;
@@ -353,13 +356,12 @@ nav a {
 
 .projects-container {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	overflow: hidden;
 }
 
 #landing-overview h2 {
-	padding-left: 25px;
+	padding: 25px;
 	font-size: 62px;
 	margin: 0;
 }
@@ -513,13 +515,13 @@ nav a {
 
 button.project-tech-btn {
 		height: auto;
-    padding: 5px 12px;
+    padding: 5px 0px;
     width: 85px;
     margin: 0 5px;
     transition: all .3s;
     color: #FFFFFF;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
-    background-color: #ff9800;
+    background-color: #249784;
 }
 
 button.project-tech-btn:hover {
@@ -528,6 +530,10 @@ button.project-tech-btn:hover {
 
 button.project-tech-btn:focus {
 	background-color: red;
+}
+
+.highlight-red {
+	background-color: #403f5c !important;
 }
 
 .project-tech-icons {
@@ -895,7 +901,10 @@ footer .container {
 	#splash-banner h1 {
 		font-size: 42px;
 	}
-
+	
+	.projects-container {
+		flex-wrap: wrap
+	}
 }
 
 
@@ -922,7 +931,7 @@ footer .container {
 		padding: 25px;
 	}
 	.project-thumbnail img{
-		width: 50%;
+		width: 100%;
 	}
 
 	.project-tech-btn {
@@ -940,16 +949,14 @@ footer .container {
 		justify-content: start;
 	}
 	
-	
+
 	.project-codebase,
 	.job-detail {
 		width: 100%;
 	}
 
-	.skills-container,
-	.projects-container {
+	.skills-container {
 		width: 100%;
-		display: block;
 	}
 
 	.skills-item {
@@ -963,9 +970,9 @@ footer .container {
 		padding: 0;
 	}
 
-	.projects-container {
+	/* .projects-container {
 		display: block;
-	}
+	} */
 }
 
 
