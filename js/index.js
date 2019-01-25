@@ -1,7 +1,5 @@
 
 
-// CONTACT
-
 // SCROLL HANDLERS
 // HORIZONTAL MENU COLOR onScroll
  $(window).scroll(function(){
@@ -12,47 +10,9 @@
 	} else {
 			$("#menu-container").removeClass("scrolling");
 	}
- })
+ });
 
-//  $(window).scroll(function(){
-// 	 let projectScrollHover = $(window).scrollTop();
-// 	 if(projectScrollHover >= 500) {
-// 		 $('#automate-tech').show(1000);
-// 		 $('#automate-info').show(1000);
-// 	 } else {
-// 		 $('#automate-tech').hide('slow');
-// 		 $('#automate-info').hide('slow')
-// 	 }
-//  })
-
-//  $(window).scroll(function(){
-// 	let projectScrollHover = $(window).scrollTop();
-// 	if(projectScrollHover >= 1000) {
-// 		$('#tunein-tech').show('slow');
-// 		$('#tunein-info').show('slow');
-// 	} else {
-// 		$('#tunein-tech').hide('slow');
-// 		$('#tunein-info').hide('slow')
-// 	}
-// })
-
-// $(window).scroll(function(){
-// 	let projectScrollHover = $(window).scrollTop();
-// 	if(projectScrollHover >= 1800) {
-// 		$('#sneakerlocker-tech').show('slow');
-// 		$('#sneakerlocker-info').show('slow');
-// 	} else {
-// 		$('#sneakerlocker-tech').hide('slow');
-// 		$('#sneakerlocker-info').hide('slow')
-// 	}
-// })
-
-
-
-
-
- // PROJECTS PAGE 
-
+// PROJECTS PAGE 
 // tech-icon click handlers
 
 // automate project
@@ -87,7 +47,7 @@ $('#automate-do-btn').on('click', e => {
 	$('#automate-do-icons').removeClass('hidden');
 	$('#automate-fe-icons').addClass('hidden');
 	$('#automate-be-icons').addClass('hidden');
-})
+});
 
 // tune in project
 $('#tunein-fe-btn').on('click', e => {
@@ -121,7 +81,7 @@ $('#tunein-do-btn').on('click', e => {
 	$('#tunein-do-icons').removeClass('hidden');
 	$('#tunein-fe-icons').addClass('hidden');
 	$('#tunein-be-icons').addClass('hidden');
-})
+});
 
 // sneakerlocker project
 
@@ -156,20 +116,4 @@ $('#sneakerlocker-do-btn').on('click', e => {
 	$('#sneakerlocker-do-icons').removeClass('hidden');
 	$('#sneakerlocker-fe-icons').addClass('hidden');
 	$('#sneakerlocker-be-icons').addClass('hidden');
-})
-
- // animation to hide and show project information
-//  $('#automate-thumbnail').click(function() {
-// 	$('#automate-tech').toggle('slow');
-// 	$('#automate-info').toggle('slow');
-//  })
-
-//  $('#tunein-thumbnail').click(function() {
-// 	$('#tunein-tech').toggle('slow');
-// 	$('#tunein-info').toggle('slow');
-//  })
-
-//  $('#sneakerlocker-thumbnail').click(function() {
-// 	$('#sneakerlocker-tech').toggle('slow');
-// 	$('#sneakerlocker-info').toggle('slow');
-//  })
+});

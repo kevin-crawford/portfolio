@@ -51,7 +51,6 @@ p {
 	font-size: 16px;
 }
 
-
 .nav-right p {
 	display: inline;
 	margin: 5px;
@@ -201,8 +200,6 @@ nav a {
 	margin: auto;
 }
 
-
-
 /* SPLASH BANNER */
 #splash-banner {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://i.imgur.com/3r67swk.jpg') no-repeat center; 
@@ -231,12 +228,10 @@ nav a {
 	margin: 110px auto;
 }
 
-
 .splash-container p {
 	font-size: 22px;
 	color: white;
 }
-
 
 /* BUTTON STYLING */
 .button {
@@ -269,7 +264,6 @@ nav a {
 	border-top-color: #3281b5;
 	background: #3281b5;
 	}
-
 
 .submit {
 		border-top: 1px solid #0a0a0a;
@@ -316,7 +310,6 @@ nav a {
 	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
-	
 }
 
 .contact-me {
@@ -427,8 +420,6 @@ nav a {
 	margin-bottom: 60px;
 	border-bottom: 1px solid black;
 }
-
-
 
 .job-title {
 	margin: auto;
@@ -580,7 +571,6 @@ button.project-tech-btn:focus {
 	margin: auto;
 }
 
-
 .project-buttons {
 	display: flex;
 	justify-content: center;
@@ -626,6 +616,7 @@ button.project-tech-btn:focus {
 	font-size: 30px;
 	margin: 10px 30px;
 }
+
 /* CONTACT */
 
 button.submit {
@@ -731,7 +722,6 @@ button.submit {
 	font-family: avenir;
 }
 
-
 #email p {
 	margin: 0;
 	font-family: arial;
@@ -780,8 +770,6 @@ footer {
 footer h3 {
 	font-size: 18px;
 }
-
-
 
 footer .container {
 	max-width: 1200px;
@@ -833,11 +821,9 @@ footer .container {
 		width: 75px;
 	}
 
-
 	h3 {
 		font-size: 28px;
 	}
-
 
 	.job-icon {
 		width: 15%;
@@ -884,8 +870,6 @@ footer .container {
 		display: block;
 	}
 
-
-
 	.job-container {
 		padding: 25px;
 	}
@@ -907,7 +891,6 @@ footer .container {
 	}
 }
 
-
 @media(min-width: 551px) and (max-width: 767px){
 	.col-2 {
 		width: 100%;
@@ -922,8 +905,6 @@ footer .container {
 	.project-tech {
 		width: 50%
 	}
-
-
 }
 
 @media(min-width: 552px) and (max-width: 950px) {
@@ -969,10 +950,6 @@ footer .container {
 		margin: 30px 0 0 0;
 		padding: 0;
 	}
-
-	/* .projects-container {
-		display: block;
-	} */
 }
 
 
