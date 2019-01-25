@@ -34,7 +34,7 @@ h2 {
 
 h3 {
 	font-family: Avenir, serif;
-	font-size: 36px;
+	font-size: 24px;
 	margin: 10px 10px;
 }
 
@@ -499,25 +499,27 @@ nav a {
 .project-detail {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	align-items: center;
 	padding-top: 25px;
 }
 
+.project-tech {
+	text-align: center;
+}
 
 .project-frontend-icons {
 	align-items: center;
 }
 
 button.project-tech-btn {
-	height: auto;
-	padding: 10px 15px;
-	width: 100px;
-	margin: 0 5px;
-	transition: all .3s;
-	color: #FFFFFF;
-	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
-	background-color: #ff9800;
+		height: auto;
+    padding: 5px 12px;
+    width: 85px;
+    margin: 0 5px;
+    transition: all .3s;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    background-color: #ff9800;
 }
 
 button.project-tech-btn:hover {
@@ -821,7 +823,12 @@ footer .container {
 		font-size: 14px;
 	}
 
-	#about h3 {
+	.project-tech-icons img {
+		width: 75px;
+	}
+
+
+	h3 {
 		font-size: 28px;
 	}
 
