@@ -59,7 +59,7 @@
 	outline: none;
 }
 .list__item {
-	padding: 10px 40px;
+	padding: 10px 30px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
