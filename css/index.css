@@ -91,6 +91,7 @@ main p {
 	font-size: 14px;
 	font-family: Roboto;
 	color: #474646;
+
 }
 
 main ul {
@@ -325,6 +326,10 @@ section.skills.section {
 	margin-left: 95px;
 }
 
+.skills h2 {
+	margin: 0px 20px;
+}
+
 .skills-item {
 	margin: auto;
 	max-width: 250px;
@@ -343,6 +348,9 @@ section.skills.section {
 	font-size: 22px;
 }
 
+.skills-item p {
+	height: 200px;
+}
 .projects-container h3 {
 	text-align: center;
 }
@@ -355,7 +363,6 @@ section.skills.section {
 
 #landing-overview h2 {
 	font-size: 42px;
-	margin: 0;
 }
 
 .projects {
@@ -364,6 +371,7 @@ section.skills.section {
 
 .projects p {
 	color: grey;
+	height: auto;
 }
 .projects-thumbnail img {
 	margin: auto;
