@@ -22,9 +22,12 @@ body {
 html {
 	background-color: #e5e5e5
 }
-
 .col-2 {
-	width: 48%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 20px;
 }
 
 h2 {
@@ -34,12 +37,12 @@ h2 {
 
 h3 {
 	font-family: montserrat;
-	font-size: 24px;
-	margin: 10px 0px;
+	font-size: 18px;
 }
 
 h4 {
 	font-family: montserrat, serif;
+	margin-bottom: 5px;
 }
 
 p {
@@ -296,7 +299,9 @@ nav a {
 	align-items: center;
 	overflow: hidden;
 }
-
+.projects {
+	padding: 15px;
+}
 .contact-me {
 	margin-top: 25px;
 }
@@ -304,6 +309,10 @@ nav a {
 .skills-container img {
 	height: 50px;
 	width: 50px;
+}
+
+section.skills.section {
+	padding: 15px;
 }
 
 .skills-container h2 {
@@ -319,6 +328,9 @@ nav a {
 	height: 350px;
 	text-align: center;
 	padding: 20px;
+}
+.project-container {
+	margin: 50px 0px;
 }
 
 .project-logo img{
@@ -340,7 +352,7 @@ nav a {
 }
 
 #landing-overview h2 {
-	font-size: 62px;
+	font-size: 42px;
 	margin: 0;
 }
 
@@ -349,12 +361,12 @@ nav a {
 }
 
 .projects p {
-	padding-left: 30px;
 	color: grey;
 }
 .projects-thumbnail img {
 	margin: auto;
 	text-align: center;
+
 }
 
 /* ABOUT */
@@ -473,16 +485,33 @@ nav a {
 }
 
 /* PROJECT PAGE VIEW */
-
+#projects {
+	border-left: 1px solid grey;
+}
 .project-detail {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-top: 25px;
+	padding: 25px;
 }
 
 .project-tech {
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	width: 40%;
+}
+
+.project-tech ul {
+	margin: 0 15px 0px 0px;
+}
+.project-tech h3 {
+	width: 100%;
+	margin: 1px 0px 1px 0;
+}
+
+.project-codebase {
+	width: 50%;
 }
 
 .project-frontend-icons {
@@ -545,6 +574,11 @@ button.project-tech-btn:focus {
 	font-family: 'Hind Madurai', sans-serif;
 	text-decoration: none;
 	color: purple;
+	display: inline-block;
+}
+
+.project-info-wrapper {
+	width: 40%;
 }
 
 .project-info h4 {
@@ -552,8 +586,7 @@ button.project-tech-btn:focus {
 }
 
 .project-thumbnail img {
-	display: block;
-	margin: auto;
+	width: 100%;
 }
 
 .project-buttons {
@@ -561,17 +594,22 @@ button.project-tech-btn:focus {
 	justify-content: center;
 }
 
-.project-container {
-	padding-top: 40px;
+.project-tech li {
+	line-height: 1.5;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: Roboto;
+	color: #474646;
 }
 
-.project-detail::before {
-	content: "";
-	display: block;
-	margin: 0 auto;
-	width: 60%;
-	padding-top: 20px;
-	border-top: 1px solid black;
+
+
+.project-thumbnail {
+	width: 50%;
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	box-shadow: 0 0 30px 1px #888;
 }
 
 .project-thumbnail button {
@@ -636,7 +674,7 @@ button.submit {
 	align-items: center;
 	justify-content: space-between;
 	max-width: 1000px;
-	margin: auto;
+	margin: 0 20px;
 }
 
 #form-info {
@@ -683,6 +721,7 @@ button.submit {
 #contact-form-wrapper form {
 	max-width: 500px;
 	padding: 5px;
+	margin-top: 15px;
 }
 
 .contact-wrapper {
@@ -775,7 +814,7 @@ footer .container {
 	}
 
 	.nav-right p {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	#selfie img {
@@ -807,15 +846,22 @@ footer .container {
 		width: 75px;
 	}
 
-	h3 {
-		font-size: 28px;
+	.project-container::before{
+		content: "";
+		display: block;
+		margin: 0 auto;
+		width: 75%;
+		margin-bottom: 60px;
+		border-bottom: 1px solid black;
 	}
+	
 
 	.job-icon {
-		width: 15%;
+		display: none;
 	}
 
-	.job-detail {
+	.job-detail,
+	#edu-section {
 		width: 80%;
 	}
 	.job-icon img {
@@ -824,13 +870,28 @@ footer .container {
     margin: 20px 0px;
 	}
 
+	.project-info p {
+		font-size: 20px;
+	}
+
 	#splash-banner {
 		height: 800px;
 	}
 
 	#landing-overview h2 {
-		font-size: 42px;
-		margin: 20px;
+		font-size: 30px;
+    margin: 15px;
+    text-align: center;
+
+	}
+
+	#edu-section {
+		padding: 25px;
+		margin: 0 auto;
+	}
+
+	#about h3 {
+		text-align: center;
 	}
 
 	.splash-container p {
@@ -840,6 +901,10 @@ footer .container {
 	.button {
 		padding: 15px 20px;
 		font-size: 16px;
+	}
+
+	.project-detail {
+		padding: 10px;
 	}
 
 	.job-title,
@@ -852,17 +917,32 @@ footer .container {
 	}
 
 	.project-thumbnail,
+	.project-codebase,
 	.project-tech {
-		width: 100%;
-		display: block;
+		width: 100%
+	}
+
+	.project-thumbnail {
+		margin: 20px;
 	}
 
 	.job-container {
 		padding: 25px;
 	}
 
+	#menu-wrapper {
+		padding-left: 0px;
+		
+	}
+
+	.list__item a {
+		font-size: 10px;
+	}
+
 	.col-2 {
 		width: 100%;
+		justify-content: left;
+		margin-top: 0;
 	}
 
 	#form-info label {
@@ -876,6 +956,17 @@ footer .container {
 	.projects-container {
 		flex-wrap: wrap
 	}
+
+	.projects p {
+		text-align: center;
+		padding: 0;
+	}
+	.edu-icon {
+		display: none;
+	}
+	.projects-section header h2 {
+    text-align: center;
+}
 }
 
 @media(min-width: 551px) and (max-width: 767px){
@@ -884,14 +975,20 @@ footer .container {
 		display: flex;
 	}
 
+	.projects p {
+		text-align: center;
+		padding: 0;
+	}
+
+	#landing-overview h2 {
+    font-size: 34px;
+		margin: 0;
+		text-align: center;
+}
 	.job-container {
 		padding: 25px;
 	}
 
-	.project-thumbnail,
-	.project-tech {
-		width: 50%
-	}
 }
 
 @media(min-width: 552px) and (max-width: 950px) {
@@ -916,12 +1013,6 @@ footer .container {
 	.project-tech-icons {
 		justify-content: start;
 	}
-	
-
-	.project-codebase,
-	.job-detail {
-		width: 100%;
-	}
 
 	.skills-container {
 		width: 100%;
@@ -936,6 +1027,7 @@ footer .container {
 	.skills-container h2 {
 		margin: 30px 0 0 0;
 		padding: 0;
+		text-align: center;
 	}
 }
 
