@@ -330,7 +330,6 @@ section.skills.section {
 	max-width: 250px;
 	height: 350px;
 	text-align: center;
-	padding: 20px;
 }
 .project-container {
 	margin: 50px 0px;
@@ -896,6 +895,13 @@ footer .container {
 		text-align: center;
 	}
 
+	.splash-container {
+		max-width: 840px;
+		width: 85%;
+		align-content: center;
+		margin: 50px auto;
+	}
+
 	.splash-container p {
 		font-size: 17px;
 	}
@@ -987,6 +993,14 @@ footer .container {
 		margin: 0;
 		text-align: center;
 }
+
+.splash-container {
+	max-width: 840px;
+	width: 85%;
+	align-content: center;
+	margin: 50px auto;
+}
+
 	.job-container {
 		padding: 25px;
 	}
