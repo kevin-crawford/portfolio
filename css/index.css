@@ -80,7 +80,7 @@ main {
 }
 
 #content-wrapper {
-	max-width: 850px;
+	max-width: 920px;
 	margin: auto;
 }
 
@@ -232,8 +232,11 @@ nav a {
 }
 
 .splash-container p {
-	font-size: 22px;
+	font-size: 20px;
 	color: white;
+	background: #474747ba;
+	border-radius: 5px;
+	padding: 25px;
 }
 
 /* BUTTON STYLING */
@@ -393,7 +396,6 @@ section.skills.section {
 
 #about-title {
 	text-align: center;
-	margin-top: -80px;
 }
 
 #about li {
@@ -801,7 +803,7 @@ footer .container {
 	margin: auto;
 	display: flex;
 	flex-flow: row;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 
