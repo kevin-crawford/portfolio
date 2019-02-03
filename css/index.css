@@ -31,23 +31,22 @@ html {
 }
 
 h2 {
-	font-family: montserrat;
+	font-family: 'Raleway', Sans-Serif;
 	font-weight: 100;
 }
 
 h3 {
-	font-family: montserrat;
-	font-size: 18px;
+	font-family: 'Raleway', Sans-Serif;
+	font-weight: 100;
+	font-size: 20px;
 }
 
 h4 {
-	font-family: montserrat, serif;
+	Font-Family: 'Raleway', Sans-Serif;
 	margin-bottom: 5px;
 }
 
-p {
-	font-family: 'Hind Madurai', sans-serif;
-}
+
 
 .nav-right {
 	float: right;
@@ -88,10 +87,9 @@ main p {
 	line-height: 1.5;
 	text-align: left;
 	font-weight: normal;
-	font-size: 14px;
-	font-family: Roboto;
+	font-size: 16px;
+	Font-Family: 'Open Sans', Sans-Serif;
 	color: #474646;
-
 }
 
 main ul {
@@ -181,6 +179,8 @@ nav a {
 
 #menu-name-wrapper p {
 	margin: 5px;
+	Font-Family: 'Open Sans', Sans-Serif;
+	font-size: 16px;
 }
 
 #menu-container{
@@ -220,7 +220,7 @@ nav a {
 }
 
 #splash-banner h1 {
-	font-family: montserrat;
+	Font-Family: 'Raleway', Sans-Serif;
 	color: cornsilk;
 	font-size: 62px;
 }
@@ -233,11 +233,14 @@ nav a {
 }
 
 .splash-container p {
-	font-size: 20px;
+	font-size: 18px;
+	line-height: 1.25;
+	margin: 50px 0px;
 	color: white;
 	background: #474747ba;
 	border-radius: 5px;
 	padding: 25px;
+	Font-Family: 'Raleway', Sans-Serif;
 }
 
 /* BUTTON STYLING */
@@ -251,7 +254,7 @@ nav a {
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 	color: white;
 	font-size: 24px;
-	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	Font-Family: 'Open Sans', Sans-Serif;
 	text-decoration: none;
 	vertical-align: middle;
 	}
@@ -276,7 +279,7 @@ nav a {
 		text-shadow: rgba(0,0,0,.4) 0 1px 0;
 		color: white;
 		font-size: 24px;
-		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+		Font-Family: 'Open Sans', Sans-Serif;
 		text-decoration: none;
 		vertical-align: middle;
 		}
@@ -306,9 +309,7 @@ nav a {
 .projects {
 	padding: 15px;
 }
-.contact-me {
-	margin-top: 25px;
-}
+
 
 .skills-container img {
 	height: 50px;
@@ -321,7 +322,7 @@ section.skills.section {
 
 .skills-container h2 {
 	padding: 10px;
-	font-family: montserrat;
+	Font-Family: 'Open Sans', Sans-Serif;
 	margin-right: 30px;
 	margin-left: 95px;
 }
@@ -331,9 +332,8 @@ section.skills.section {
 }
 
 .skills-item {
-	margin: auto;
+	margin: 25px auto;
 	max-width: 250px;
-	height: 350px;
 	text-align: center;
 }
 .project-container {
@@ -341,7 +341,7 @@ section.skills.section {
 }
 
 .project-logo img{
-	width: 100%;
+	width: 85%;
 }
 
 .skills-item h3 {
@@ -382,9 +382,14 @@ section.skills.section {
 /* ABOUT */
 
 #about section {
-	margin-top: 110px;
+	margin: 55px 0px;
 }
 
+
+#about h3 {
+	font-size: 38px;
+	margin-left: 25px;
+}
 #tech-section {
 	padding-bottom: 75px;
 }
@@ -403,11 +408,12 @@ section.skills.section {
 
 #about-title {
 	text-align: center;
+	margin: 40px 0px;
 }
 
 #about li {
 	line-height: 1.5em;
-	font-family: 'Hind Madurai', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .job-container {
@@ -447,7 +453,7 @@ section.skills.section {
 
 .job-detail li {
 	padding: 5px 0;
-	font-family: 'Hind Madurai', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .job-icon {
@@ -580,7 +586,7 @@ button.project-tech-btn:focus {
 }
 
 .project-info a {
-	font-family: 'Hind Madurai', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	color: purple;
 	display: inline-block;
@@ -608,7 +614,7 @@ button.project-tech-btn:focus {
 	text-align: left;
 	font-weight: normal;
 	font-size: 14px;
-	font-family: Roboto;
+	font-family: 'Open Sans', sans-serif;
 	color: #474646;
 }
 
@@ -683,7 +689,7 @@ button.submit {
 	align-items: center;
 	justify-content: space-between;
 	max-width: 1000px;
-	margin: 0 20px;
+	margin: 70px 20px;
 }
 
 #form-info {
@@ -693,7 +699,7 @@ button.submit {
 }
 
 #contact-form-wrapper label {
-	font-family: montserrat;
+	Font-Family: 'Open Sans', Sans-Serif;
 	
 }
 
@@ -750,13 +756,14 @@ button.submit {
 	color: black;
 	font-weight: bold;
 	font-size: 18px;
-	font-family: montserrat;
+	Font-Family: 'Open Sans', Sans-Serif;
 }
 
 #email p {
 	margin: 0;
-	font-family: arial;
-  font-size: 12px;
+	Font-Family: 'Open Sans', Sans-Serif;
+	font-size: 14px;
+	padding-top: 5px;
 }
 
 #contact-form-wrapper textarea {
@@ -781,11 +788,12 @@ button.submit {
 
 .item li {
 	margin: 20px 0px;
-	font-family: Arial, Helvetica, sans-serif;
+	Font-Family: 'Open Sans', Sans-Serif;
 	font-weight: 100;
 }
 .projects-section header h2 {
 	padding: 10px 40px;
+	font-size: 38px;
 }
 
 .item a {
@@ -844,11 +852,11 @@ footer .container {
 	}
 
 	#about li {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	#about h4 {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.project-tech-icons img {
@@ -871,7 +879,7 @@ footer .container {
 
 	.job-detail,
 	#edu-section {
-		width: 80%;
+		width: 100%;
 	}
 	.job-icon img {
     max-width: 45px;
@@ -911,7 +919,7 @@ footer .container {
 	}
 
 	.splash-container p {
-		font-size: 17px;
+		font-size: 14px;
 	}
 
 	.button {
