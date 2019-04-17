@@ -1,259 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TLN5BV5");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kevin Crawford | Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="img/tech-icons/kc_favicon.ico"
+      type="image/x-icon/"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat|Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/component.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/segment.min.js"></script>
+    <script src="js/ease.min.js"></script>
+  </head>
 
-		<head>
-				<meta charset="utf-8" />
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<title>Kevin Crawford | Resume</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<link rel='icon' href='img/tech-icons/kc_favicon.ico' type='image/x-icon/'>
-				<link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Lora|Montserrat|Roboto" rel="stylesheet">
-				<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
-				<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-				<link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-				<link rel="stylesheet" type="text/css" media="screen" href="css/component.css" />
-				<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-				<script src="js/segment.min.js"></script>
-				<script src="js/ease.min.js"></script>
-			</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TLN5BV5"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION -->
+    <nav role="navigation">
+      <div id="menu-container">
+        <div id="menu-horizontal">
+          <div id="menu-name-wrapper">
+            <p>Kevin Crawford</p>
+            <a
+              href="https://github.com/kevin-crawford/"
+              class="menu-social-icon"
+              ><img src="img/tech-icons/github-logo.svg" alt="github icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/kd-crawford/"
+              class="menu-social-icon"
+              ><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"
+            /></a>
+          </div>
 
-<body>
+          <div
+            id="menu-icon-wrapper"
+            class="menu-icon-wrapper"
+            style="visibility: hidden"
+          >
+            <svg width="1000px" height="1000px">
+              <path
+                id="pathA"
+                d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+              ></path>
+              <path id="pathB" d="M 300 500 L 700 500"></path>
+              <path
+                id="pathC"
+                d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+              ></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
 
-	<!-- NAVIGATION -->
-	<nav role="navigation">
-		<div id="menu-container">
-			<div id="menu-horizontal">
+          <div id="nav-large" class="stroke">
+            <ul>
+              <li class="home-link">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="about-link">
+                <a href="about.html" class="underline">Resume / CV</a>
+              </li>
+              <li class="contact-link">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-					<div id="menu-name-wrapper">
-						<p>Kevin Crawford</p>
-						<a href="https://github.com/kevin-crawford/" class="menu-social-icon"><img src="img/tech-icons/github-logo.svg" alt="github icon"></a>
-						<a href="https://www.linkedin.com/in/kd-crawford/" class="menu-social-icon"><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"></a>
-					</div>
+      <!-- NAVIGATION LIST ITEMS MOBILE -->
+      <div id="menu-list" class="menu-list hidden">
+        <div id="menu-wrapper">
+          <div class="list__item">
+            <a href="index.html" class="home-link underline">Home</a>
+            <a href="https://github.com/kevin-crawford/" class="nav-right"
+              ><img src="img/tech-icons/github-logo.svg" />
+              <p>Github</p></a
+            >
+          </div>
+          <div class="list__item">
+            <a href="about.html" class="about-link">Resume / CV</a>
+            <a href="https://www.linkedin.com/in/kd-crawford/" class="nav-right"
+              ><img
+                src="img/tech-icons/linkedin-logo.svg"
+                alt="linked in icon"
+              />
+              <p>LinkedIn</p></a
+            >
+          </div>
+          <div class="list__item">
+            <a href="contact.html" class="contact-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-				<div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-					<svg width="1000px" height="1000px">
-						<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-						<path id="pathB" d="M 300 500 L 700 500"></path>
-						<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-					</svg>
-					<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-				</div>
+    <section id="splash-banner" style="height:250px">
+      <div class="splash-container"></div>
+    </section>
 
-				<div id="nav-large" class="stroke">
-					<ul>
-						<li class="home-link">
-							<a href="index.html">Home</a>
-						</li>
-						<li class="about-link">
-							<a href="about.html" class="underline">Resume / CV</a>
-						</li>
-						<li class="contact-link">
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-
-		<!-- NAVIGATION LIST ITEMS MOBILE -->
-		<div id="menu-list" class="menu-list hidden">
-				<div id="menu-wrapper">
-						<div class="list__item">
-							<a href="index.html" class="home-link underline">Home</a>
-							<a href="https://github.com/kevin-crawford/" class="nav-right"><img src="img/tech-icons/github-logo.svg"><p>Github</p></a>
-						</div>
-						<div class="list__item">
-							<a href="about.html" class="about-link">Resume / CV</a>
-							<a href="https://www.linkedin.com/in/kd-crawford/" class="nav-right"><img src="img/tech-icons/linkedin-logo.svg" alt="linked in icon"><p>LinkedIn</p></a>
-						</div>
-						<div class="list__item">
-							<a href="contact.html" class="contact-link">Contact</a>
-						</div>
-					</div>
-		</div>
-	</nav>
-
-	<section id="splash-banner" style="height:250px">
-		<div class="splash-container">
-		</div>
-	</section>
-
-	<main role="main">
-		<div id="content-wrapper">
-			<!--          ABOUT ME PAGE VIEW           -->
-			<div id="about" >
-					<!-- NEED UPDATED PICTURE OF SELF -->
-				<!-- <div id="selfie">
+    <main role="main">
+      <div id="content-wrapper">
+        <!--          ABOUT ME PAGE VIEW           -->
+        <div id="about">
+          <!-- NEED UPDATED PICTURE OF SELF -->
+          <!-- <div id="selfie">
 					<img src="img/kevinmocktrimpic.png" alt="img of me">
 				</div> -->
-				<div id="about-title">
-					<h2>Kevin Douglas Crawford</h2>
-						<h2>Full Stack Engineer</h2>
-				</div>
+          <div id="about-title">
+            <h2>Kevin Douglas Crawford</h2>
+            <h2>Full Stack Engineer</h2>
+          </div>
 
-				<section id="work-section">
-					<h3>Work History</h3>
-					
-					<div class="job-container">
-						<div class="job-icon">
-							<img src="img/uplanduni-logo.jpg" alt="upland unified logo">
-						</div>
-						
-						<div class="job-detail">
-							<div class="job-title">
-									<h4>Upland Unified School District</h4>
-									<h4>Substitute Teacher</h4>
-									<h4>2017 - Current</h4>
-							</div>
-							<ul>
-								<li>Follow regular teacher’s lesson plans in a way that ensures consistency and optimal learning, and that encourages students to participate</li>
-								<li>Assign classwork and homework as necessary, according to lesson plans</li>
-								<li>Modify teaching styles to fit the learning styles of various students</li>
-							</ul>
-						</div>
-					</div>
+          <section id="work-section">
+            <h3>Work History</h3>
 
-				<div class="job-container">
-						<div class="job-icon">
-							<img src="img/uplanduni-logo.jpg" alt="upland unified logo">
-						</div>
-						
-						<div class="job-detail">
-							<div class="job-title">
-									<h4>Upland Unified School District</h4>
-									<h4>Instructional Aide</h4>
-									<h4>2016</h4>
-							</div>
-							<ul>
-								<li>Assist classroom teacher in performing specific duties as assigned or undertaking specialized tasks to achieve and enhance instructional and behavioral objectives.</li>
-								<li>Assist with behavior modification as assigned by teacher.</li>
-								<li></li>
-							</ul>
-						</div>
-					</div>
-			
-					
-					<div class="job-container">
-						<div class="job-icon">
-							<img src="img/kcf4h.jpg" alt="upland unified logo">
-						</div>
-						
-						<div class="job-detail">
-							<div class="job-title">
-									<h4>Kids Come First 4 Health</h4>
-									<h4>Internship</h4>
-									<h4>2015</h4>
-							</div>
-							<ul>
-								<li>Responsible for easing transition into electronic medical records system</li>
-								<li>Conducted literature review of the transitioning EHR system</li>
-								<li>Generated grant reports that help report and facilitate grant proposals</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+            <div class="job-container">
+              <div class="job-icon">
+                <img src="img/uplanduni-logo.jpg" alt="upland unified logo" />
+              </div>
 
-				<section id="edu-section">
-					<h3>Education</h3>
-					<div class="edu-container">
-						<div class="edu-detail">
-							<ul>
-								<li><b>State University San Bernardino</b></li>
-								<li>Bachelors of Science / Health Science</li>
-								<li>2011-2015</li>
-							</ul>
-						</div>
-						<img class="edu-icon" src="img/csusb-logo.png" alt="CSUSB logo">
-					</div>
-					<div class="edu-container">
-						<div class="edu-detail">
-							<ul>
-								<li><b>ThinkFul</b></li>
-								<li>Full Stack Flex Engineering Program</li>
-								<li>2017 - 2018</li>
-							</ul>
-						</div>
-						<img class="edu-icon" src="img/thinkful-logo.png" alt="thinkful logo">
-					</div>
-				</section>
+              <div class="job-detail">
+                <div class="job-title">
+                  <h4>Upland Unified School District</h4>
+                  <h4>Substitute Teacher</h4>
+                  <h4>2017 - Current</h4>
+                </div>
+                <ul>
+                  <li>
+                    Follow regular teacher’s lesson plans in a way that ensures
+                    consistency and optimal learning, and that encourages
+                    students to participate
+                  </li>
+                  <li>
+                    Assign classwork and homework as necessary, according to
+                    lesson plans
+                  </li>
+                  <li>
+                    Modify teaching styles to fit the learning styles of various
+                    students
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-				<section id="tech-section">
-					<h3>Technologies</h3>
-					<div class="tech-container">
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/babel-logo.svg" alt="babel logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/css3-logo.svg" alt="css logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/express-logo.svg" alt="express logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/github-logo.png" alt="github logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/JavaScript-logo.png" alt="javascript logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/jest-logo.svg" alt="jest logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/jquery-logo.svg" alt="jquery logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/mongodb-logo.svg" alt="mongodb logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/mocha-logo.svg" alt="mocha logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/npm-logo.svg" alt="npm logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/nodejs-logo.png" alt="node js logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/react-logo.svg" alt="react logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/redux-logo.svg" alt="redux logo">
-						</div>
-						<div class="tech-detail">
-							<img class="tech-icon" src="img/tech-icons/webpack-logo.svg" alt="webpack logo">
-						</div>
-					</div>
-				</section>
+            <div class="job-container">
+              <div class="job-icon">
+                <img src="img/uplanduni-logo.jpg" alt="upland unified logo" />
+              </div>
 
-			</div>
-		</div>
-	</main>
+              <div class="job-detail">
+                <div class="job-title">
+                  <h4>Upland Unified School District</h4>
+                  <h4>Instructional Aide</h4>
+                  <h4>2016</h4>
+                </div>
+                <ul>
+                  <li>
+                    Assist classroom teacher in performing specific duties as
+                    assigned or undertaking specialized tasks to achieve and
+                    enhance instructional and behavioral objectives.
+                  </li>
+                  <li>
+                    Assist with behavior modification as assigned by teacher.
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
 
-	<!-- FOOTER -->
-	<footer role="contentinfo">
-			<div class="container">
-				<div class="item">
-					<h3>Menu</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">Resume</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-				<div class="item">
-					<h3>Social</h3>
-					<ul>
-						<li><a href="https://github.com/kevin-crawford/">Github</a></li>
-						<li><a href="https://www.linkedin.com/in/kd-crawford/">LinkedIn</a></li>
-						<li><a href="https://twitter.com/kdxcii/">Twitter</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	<!-- SCRIPTS -->
-	<script src="js/component.js"></script>
-	<script src="js/index.js"></script>
-</body>
+            <div class="job-container">
+              <div class="job-icon">
+                <img src="img/kcf4h.jpg" alt="upland unified logo" />
+              </div>
 
+              <div class="job-detail">
+                <div class="job-title">
+                  <h4>Kids Come First 4 Health</h4>
+                  <h4>Internship</h4>
+                  <h4>2015</h4>
+                </div>
+                <ul>
+                  <li>
+                    Responsible for easing transition into electronic medical
+                    records system
+                  </li>
+                  <li>
+                    Conducted literature review of the transitioning EHR system
+                  </li>
+                  <li>
+                    Generated grant reports that help report and facilitate
+                    grant proposals
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="edu-section">
+            <h3>Education</h3>
+            <div class="edu-container">
+              <div class="edu-detail">
+                <ul>
+                  <li><b>State University San Bernardino</b></li>
+                  <li>Bachelors of Science / Health Science</li>
+                  <li>2011-2015</li>
+                </ul>
+              </div>
+              <img class="edu-icon" src="img/csusb-logo.png" alt="CSUSB logo" />
+            </div>
+            <div class="edu-container">
+              <div class="edu-detail">
+                <ul>
+                  <li><b>ThinkFul</b></li>
+                  <li>Full Stack Flex Engineering Program</li>
+                  <li>2017 - 2018</li>
+                </ul>
+              </div>
+              <img
+                class="edu-icon"
+                src="img/thinkful-logo.png"
+                alt="thinkful logo"
+              />
+            </div>
+          </section>
+
+          <section id="tech-section">
+            <h3>Technologies</h3>
+            <div class="tech-container">
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/babel-logo.svg"
+                  alt="babel logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/css3-logo.svg"
+                  alt="css logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/express-logo.svg"
+                  alt="express logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/github-logo.png"
+                  alt="github logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/JavaScript-logo.png"
+                  alt="javascript logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/jest-logo.svg"
+                  alt="jest logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/jquery-logo.svg"
+                  alt="jquery logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/mongodb-logo.svg"
+                  alt="mongodb logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/mocha-logo.svg"
+                  alt="mocha logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/npm-logo.svg"
+                  alt="npm logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/nodejs-logo.png"
+                  alt="node js logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/react-logo.svg"
+                  alt="react logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/redux-logo.svg"
+                  alt="redux logo"
+                />
+              </div>
+              <div class="tech-detail">
+                <img
+                  class="tech-icon"
+                  src="img/tech-icons/webpack-logo.svg"
+                  alt="webpack logo"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="item">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="https://github.com/kevin-crawford/">Github</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/kd-crawford/">LinkedIn</a>
+            </li>
+            <li><a href="https://twitter.com/kdxcii/">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="js/component.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
